@@ -74,23 +74,23 @@ body {
 
 
 /* =========================
-   HERO
+   inicio
 ========================= */
-.hero {
+.inicio-contenedor {
     text-align: center;
     padding: 100px 20px;
 }
 
-.hero h1 {
+.inicio-contenedor h1 {
     font-size: 42px;
     margin-bottom: 20px;
 }
 
-.hero p {
+.inicio-contenedor p {
     font-weight: 300;
     margin-bottom: 30px;
 }
-.hero img {
+.inicio-contenedor img {
     align-items: center;
     width: 200px;
 }
