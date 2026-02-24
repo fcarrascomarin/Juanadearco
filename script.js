@@ -91,6 +91,32 @@ function seguirComprando() {
     });
 }
 
+
+/* =========================
+   SECCIONES PRODUCTOS
+========================= */
+const botones = document.querySelectorAll(".filtro");
+const productos = document.querySelectorAll(".producto");
+
+botones.forEach(boton => {
+  boton.addEventListener("click", () => {
+
+    botones.forEach(b => b.classList.remove("active"));
+    boton.classList.add("active");
+
+    const categoria = boton.dataset.categoria;
+
+    productos.forEach(producto => {
+      if (categoria === "todos" || producto.dataset.categoria === categoria) {
+        producto.style.display = "block";
+      } else {
+        producto.style.display = "none";
+      }
+    });
+
+  });
+});
+
 /* =========================
    MENU HAMBURGUESA
 ========================= */

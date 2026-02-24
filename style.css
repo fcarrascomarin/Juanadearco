@@ -144,53 +144,69 @@ body {
 /* =========================
    PRODUCTOS
 ========================= */
-.productos {
-    padding: 80px 10%;
+.categorias {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.productos h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 28px;
+.filtro {
+  background: none;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: 0 15px;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.filtro::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: black;
+  transition: 0.3s ease;
+}
+
+.filtro:hover::after,
+.filtro.active::after {
+  width: 100%;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.producto {
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.producto h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.producto p {
+  font-size: 14px;
+  color: #555;
 }
 
 
-
-
-.card img {
-    width: 100%;
-    max-width: 200px;   /* 🔥 controla tamaño real */
-    height: auto;
-     margin-bottom: 10px;
-}
-
-
-.card h3 {
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.precio {
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-.card button {
-    background: #d9d3c0cb;
-    color: #111;
-    border: none;
-    padding: 10px 25px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.card button:hover {
-    background: #333;
-    color: #fff;
-}
-
-
-
+/* =========================
+   PERFORACIONES
+========================= */
 
 
 #perforaciones {
