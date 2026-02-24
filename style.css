@@ -76,11 +76,7 @@ body {
 /* =========================
    inicio
 ========================= */
-.sue-ellen-francisco-regular {
-  font-family: "Sue Ellen Francisco", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 .btn {
     background: #111;
@@ -123,6 +119,7 @@ body {
     text-align: center;
     text-decoration: solid;
     gap: 40px;
+    font-family: "sue-ellen-francisco-regular";
 }
 .inicio img {
     width: 200px;
