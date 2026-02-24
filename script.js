@@ -9,6 +9,10 @@ function agregarAlCarrito(nombre, precio) {
     carrito.push({ nombre, precio });
     total += precio;
     actualizarCarrito();
+    // 🔥 SCROLL AL CARRITO
+    document.getElementById("carrito").scrollIntoView({
+        behavior: "smooth"
+    });
 }
 
 function actualizarCarrito() {
@@ -81,6 +85,11 @@ function cambiarImagen(boton, direccion) {
     img.dataset.index = index;
 }
 
+function seguirComprando() {
+    document.getElementById("productos").scrollIntoView({
+        behavior: "smooth"
+    });
+}
 
 /* =========================
    MENU HAMBURGUESA

@@ -291,36 +291,45 @@ body {
    CARRITO
 ========================= */
 .carrito {
-    padding: 60px 10%;
-    background: #f8f8f8;
+    padding: 80px 10%;
+    background: #f8f6f2;
+    text-align: center;
 }
 
-.carrito h2 {
-    margin-bottom: 20px;
-}
-
-#lista-carrito {
-    list-style: none;
-    margin-bottom: 20px;
-}
-
-#lista-carrito li {
+.carrito-botones {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
-.total {
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.btn-wsp {
-    background: #d9d3c0cb;
-    color: #111;
+.btn-principal {
+    background: #111;
+    color: white;
     border: none;
-    padding: 12px 25px;
+    padding: 14px 30px;
     cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background: #333;
+}
+
+.btn-secundario {
+    background: transparent;
+    border: 1px solid #111;
+    padding: 14px 30px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-secundario:hover {
+    background: #111;
+    color: white;
 }
 
 
