@@ -78,23 +78,61 @@ body {
 ========================= */
 
 .inicio {
-  width: 100%;
-  height: 100vh; /* o 80vh si querés más chico */
-  overflow: hidden;
+  padding: 80px 10%;
+  background-color: #f8f6f3;
+}
+
+.inicio-contenido {
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 60px;
 }
 
-.inicio-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .inicio-texto {
-    font-family: "Sue Ellen Francisco";
-
+  flex: 1;
 }
 
+.inicio-texto h1 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.inicio-texto p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 450px;
+  color: #444;
+}
+
+.btn-amuleto {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid #000;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.btn-amuleto:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.inicio-imagen {
+  flex: 1;
+}
+
+.inicio-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
 
 
