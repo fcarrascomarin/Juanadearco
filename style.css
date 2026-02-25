@@ -203,7 +203,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 60px 40px; /* vertical horizontal */
+  gap: 60px 60px; /* vertical horizontal */
   margin-top: 60px;
 };
 
@@ -214,6 +214,10 @@ body {
 
 .card:hover {
   transform: translateY(-5px);
+};
+
+.card-text{
+ padding-right: 10px
 };
 }
 /* =========================
