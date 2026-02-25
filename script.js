@@ -91,7 +91,64 @@ function seguirComprando() {
     });
 }
 
+document.addEventListener("DOMContentLoaded", function () {
 
+    const filtros = document.querySelectorAll(".filtro");
+    const cards = document.querySelectorAll(".card");
+    const frase = document.getElementById("fraseCategoria");
+    const seccionProductos = document.getElementById("productos");
+
+    const frases = {
+        todos: "",
+        promesa: "Las promesas no se dicen, se llevan.",
+        llama: "Lo que arde en tu interior merece brillar.",
+        camino: "Cada paso deja una huella en tu historia."
+    };
+
+    filtros.forEach(boton => {
+        boton.addEventListener("click", () => {
+
+            filtros.forEach(b => b.classList.remove("active"));
+            boton.classList.add("active");
+
+            const categoria = boton.dataset.categoria;
+
+            // Reset fondo
+            seccionProductos.classList.remove("promesa-bg", "llama-bg", "camino-bg");
+
+            if (categoria === "promesa") {
+                seccionProductos.classList.add("promesa-bg");
+            }
+            if (categoria === "llama") {
+                seccionProductos.classList.add("llama-bg");
+            }
+            if (categoria === "camino") {
+                seccionProductos.classList.add("camino-bg");
+            }
+
+            // Frase animada
+            frase.classList.remove("visible");
+            frase.textContent = frases[categoria] || "";
+
+            setTimeout(() => {
+                if (frases[categoria]) {
+                    frase.classList.add("visible");
+                }
+            }, 100);
+
+            // Filtrar productos
+            cards.forEach(card => {
+                if (categoria === "todos" || card.dataset.categoria === categoria) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+
+        });
+    });
+
+});
 
 
 /* =========================
