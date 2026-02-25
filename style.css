@@ -23,13 +23,15 @@ body {
     border-bottom: 1px solid #eeeeee;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .nav-container {
     max-width: 1200px;
+    margin: auto;
     padding: 0 10%;
     height: 100px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -122,8 +124,11 @@ body {
   color: #fff;
 }
 
+.inicio-imagen {
+  flex: 1;
+}
 
-.inicio img {
+.inicio-imagen img {
   width: 80%;
   height: auto;
   border-radius: 8px;
@@ -144,6 +149,8 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+
 
 
 
@@ -196,7 +203,7 @@ body {
 }
 
 .producto img {
-  
+  width: 100%;
   border-radius: 6px;
   margin-bottom: 15px;
 }
