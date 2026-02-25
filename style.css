@@ -129,26 +129,11 @@ body {
 }
 
 .inicio-imagen img {
-  width: 80%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
 }
-.frase-categoria {
-    text-align: center;
-    font-size: 18px;
-    font-style: italic;
-    margin: 10px 0 40px 0;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.6s ease;
-    min-height: 30px;
-    color: #555;
-}
 
-.frase-categoria.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 
 
@@ -380,7 +365,11 @@ body {
     justify-content: center;
 }
 
-
+.producto-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
 
 
    
@@ -400,11 +389,11 @@ body {
 }
 
 .prev {
-    left: 1px;
+    left: 5px;
 }
 
 .next {
-    right: 1px;
+    right: 5px;
 }
 
 
