@@ -199,8 +199,23 @@ body {
   font-size: 14px;
   color: #555;
 }
+#producto{
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 60px 40px; /* vertical horizontal */
+  margin-top: 60px;
+};
 
+.card {
+  padding: 15px;
+  transition: all 0.3s ease;
+};
 
+.card:hover {
+  transform: translateY(-5px);
+};
+}
 /* =========================
    PERFORACIONES
 ========================= */
