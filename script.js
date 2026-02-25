@@ -95,7 +95,7 @@ function seguirComprando() {
 /* =========================
    SECCIONES PRODUCTOS
 ========================= */
-<script>
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const filtros = document.querySelectorAll(".filtro");
@@ -154,7 +154,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-</script>
 
 
 
