@@ -23,15 +23,13 @@ body {
     border-bottom: 1px solid #eeeeee;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .nav-container {
     max-width: 1200px;
-    margin: auto;
     padding: 0 10%;
     height: 100px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -124,9 +122,6 @@ body {
   color: #fff;
 }
 
-.inicio-imagen {
-  flex: 1;
-}
 
 .inicio img {
   width: 80%;
@@ -149,8 +144,6 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-
-
 
 
 
