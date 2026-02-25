@@ -380,11 +380,7 @@ body {
     justify-content: center;
 }
 
-.producto-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
+
 
 
    
@@ -404,11 +400,11 @@ body {
 }
 
 .prev {
-    left: 5px;
+    left: 1px;
 }
 
 .next {
-    right: 5px;
+    right: 1px;
 }
 
 
