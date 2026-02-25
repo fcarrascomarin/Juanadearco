@@ -117,6 +117,47 @@ botones.forEach(boton => {
   });
 });
 
+const filtros = document.querySelectorAll(".filtro");
+const cards = document.querySelectorAll(".card");
+const frase = document.getElementById("fraseCategoria");
+
+const frases = {
+    todos: "",
+    promesa: "Las promesas no se dicen, se llevan.",
+    llama: "Lo que arde en tu interior merece brillar.",
+    camino: "Cada paso deja una huella en tu historia."
+};
+
+filtros.forEach(boton => {
+    boton.addEventListener("click", () => {
+
+        filtros.forEach(b => b.classList.remove("active"));
+        boton.classList.add("active");
+
+        const categoria = boton.dataset.categoria;
+
+        // Mostrar frase con animación
+        frase.classList.remove("visible");
+        frase.textContent = frases[categoria] || "";
+
+        setTimeout(() => {
+            if (frases[categoria]) {
+                frase.classList.add("visible");
+            }
+        }, 100);
+
+        // Filtrar productos
+        cards.forEach(card => {
+            if (categoria === "todos" || card.dataset.categoria === categoria) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
+
+
 /* =========================
    MENU HAMBURGUESA
 ========================= */
