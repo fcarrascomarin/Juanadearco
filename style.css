@@ -199,12 +199,7 @@ body {
   font-size: 14px;
   color: #555;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 60px;
-  margin-top: 60px;
-}
+
 
 .card {
   padding: 15px;
@@ -354,9 +349,12 @@ body {
     color: white;
 }
 
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 60px;
+  margin-top: 60px;
 }
 
 .card img {
