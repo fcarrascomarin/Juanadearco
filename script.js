@@ -67,9 +67,9 @@ function enviarconsulta(dia) {
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
   window.open(url, "_blank");
 }
-function enviarconsulta(redes) {
+function enviarconsulta(perforaciones) {
   const numero = "56998920489"; // 🔥 CAMBIÁ ESTO POR TU NÚMERO
-  const mensaje = `Hola! Quiero consultar por tipos de perforación ${redes}`;
+  const mensaje = `Hola! Quiero consultar por tipos de ${perforaciones}`;
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
   window.open(url, "_blank");
 }
