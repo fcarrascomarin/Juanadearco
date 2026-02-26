@@ -10,7 +10,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
-    color: #3e4341;
+    color: #956330;
 }
 
 /* =========================
@@ -19,7 +19,7 @@ body {
 
 
 .header {
-    background: #b8a28c;
+    background: #e9cbad;
     border-bottom: 1px solid #eeeeee;
     position: sticky;
     top: 0;
