@@ -231,7 +231,10 @@ body {
     background: #f8f8f8;
     
 }
-    .perforaciones img 
+    .pres .perforaciones img{
+      display: inline;
+
+    }
 
 .perforaciones img {
     width: 200px;
