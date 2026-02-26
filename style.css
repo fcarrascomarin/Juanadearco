@@ -199,40 +199,38 @@ body {
   font-size: 14px;
   color: #555;
 }
-#producto{
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 60px 60px; /* vertical horizontal */
+  gap: 60px;
   margin-top: 60px;
-};
+}
 
 .card {
   padding: 15px;
   transition: all 0.3s ease;
-};
+}
 
 .card:hover {
   transform: translateY(-5px);
-};
+}
 
-.card-text{
- padding-right: 10px
-};
+.card-text {
+  padding-right: 10px;
 }
 /* =========================
    PERFORACIONES
 ========================= */
-
 .perforaciones {
-    
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    padding: 40px 10%;
+    padding: 60px 10%;
     background: #f8f6f3;
     flex-wrap: wrap;
 }
+
    .col-izq {
     text-align: center;
 }
