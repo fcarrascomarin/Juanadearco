@@ -285,9 +285,9 @@ body {
 
 .dias button {
   padding: 12px 20px;
-  border: none;
-  background-color: #f8f6f3;
-  color: white;
+  border: 1px solid #ecc889;
+  background-color: #ecc889;
+  color: #fff;
   cursor: pointer;
   border-radius: 8px;
   font-size: 16px;
