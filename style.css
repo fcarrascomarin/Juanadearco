@@ -232,12 +232,12 @@ body {
     
 }
     .pres .perforaciones img{
-      display: inline;
+      display: inline-flex;
 
     }
 
 .perforaciones img {
-    width: 100px;
+    width: 90px;
     
 }
 
@@ -245,8 +245,7 @@ body {
 
 .redes-perforaciones {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+        gap: 10px;
     margin-top: 15px;
 }
 
