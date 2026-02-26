@@ -226,7 +226,6 @@ body {
 
 .perforaciones {
     display: inline;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 100px 10%;
@@ -235,7 +234,7 @@ body {
 }
 
 .perforaciones img {
-    width: 100px;
+    width: 80px;
     
 }
 .perforaciones i a {
@@ -245,7 +244,7 @@ body {
 }
 
 .perforaciones  {
-    display: flex;
+    display: inline-flex;
     gap: 40px;
     margin-top: 30px;
     flex-wrap: wrap;
