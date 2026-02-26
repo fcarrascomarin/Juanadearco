@@ -288,7 +288,7 @@ body {
 .dias button {
   padding: 12px 20px;
   border: none;
-  background-color: #ecc889;
+  background-color: #f8f6f3;
   color: white;
   cursor: pointer;
   border-radius: 8px;
@@ -383,9 +383,7 @@ body {
     object-fit: contain;
 }
 
-
-   
-
+  
 
 
 .slider button {
