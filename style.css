@@ -226,30 +226,23 @@ body {
 
 .perforaciones {
     display: inline;
-    align-items: center;
     text-align: center;
-    padding: 100px 10%;
+    padding: 20px 10%;
     background: #f8f8f8;
     
 }
+    
 
 .perforaciones img {
     width: 100px;
     
 }
-.perforaciones i a {
+.perforaciones i {
   width: 20px;
-  padding: 10%;
+  padding: 20px;
 
 }
 
-.perforaciones  {
-    display: inline-flex;
-    gap: 40px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 
 .redes-perforaciones {
