@@ -236,6 +236,9 @@ body {
    .col-izq {
     text-align: center;
 }
+.perforaciones img{
+  width: 50px;
+}
 
 .col-izq img {
     width: 180px;
