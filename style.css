@@ -116,6 +116,7 @@ body {
   letter-spacing: 1px;
   color: #956330;
   transition: 0.3s ease;
+  align-items: center;
 }
 
 .btn-amuleto:hover {
@@ -229,7 +230,7 @@ body {
     justify-content: space-between;
     gap: 50px;
     padding: 40px 10%;
-    background: #fec184fc;
+    background: #f8f6f3;
     flex-wrap: wrap;
 }
    .col-izq {
@@ -259,7 +260,7 @@ body {
 
 .redes-perforaciones a {
     text-decoration: none;
-    color: #956330;
+    color: #ecc889;
     font-weight: 800;
      transition: 0.3s;
 }
@@ -287,7 +288,7 @@ body {
 .dias button {
   padding: 12px 20px;
   border: none;
-  background-color: #fec184fc;
+  background-color: #ecc889;
   color: white;
   cursor: pointer;
   border-radius: 8px;
@@ -296,7 +297,7 @@ body {
 }
 
 .dias button:hover {
-  background-color: #fec184fc;
+  background-color: ##ecc889;
 }
 
 .mensaje-agenda a {
@@ -328,7 +329,7 @@ body {
 }
 
 .btn-principal {
-    background:#fec184fc;
+    background:#ecc889;
     color: white;
     border: none;
     padding: 14px 30px;
@@ -391,7 +392,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background:#fec184fc;
+    background:#ecc889;
     color: white;
     border: none;
     padding: 6px 10px;
@@ -415,7 +416,7 @@ footer {
     text-align: center;
     padding: 30px;
     font-size: 14px;
-    border-top: 1px solid #956330;
+    border-top: 1px solid #f8f6f3;
 }
 
 /* =========================
