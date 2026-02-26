@@ -235,7 +235,12 @@ body {
 }
 
 .perforaciones img {
-    width: 300px;
+    width: 100px;
+    display: flex;
+}
+.perforaciones i {
+  width: 20px;
+
 }
 
 .perforaciones  {
