@@ -127,7 +127,7 @@ body {
   flex: 1;
 }
 
-.inicio-imagen img {
+.inicio-imagen {
   width: 60%;
   height: auto;
   border-radius: 8px;
