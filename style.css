@@ -250,7 +250,7 @@ body {
 }
 
 .redes-perforaciones {
-    display: flex;
+    
     flex-direction: column;
     gap: 8px;
 }
