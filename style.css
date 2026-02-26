@@ -251,9 +251,10 @@ body {
 
 .redes-perforaciones {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 15px 0;
+    flex-direction: column;   /* 🔥 esto las pone en columna */
+    align-items: flex-start;  /* alineadas a la izquierda */
+    gap: 10px;
+    margin-top: 15px;
 }
 
 .redes-perforaciones a {
