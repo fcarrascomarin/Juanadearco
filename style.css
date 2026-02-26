@@ -225,56 +225,60 @@ body {
 ========================= */
 
 .perforaciones {
-    display: inline;
-    text-align: center;
-    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 40px 10%;
     background: #f8f8f8;
-    
+    flex-wrap: wrap;
 }
-    .pres .perforaciones img{
-      display: inline-flex;
-
-    }
-
-.perforaciones img {
-    width: 90px;
-    
+   .col-izq {
+    text-align: center;
 }
 
-
+.col-izq img {
+    width: 180px;
+    margin-top: 15px;
+}
+.garantias {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+}
 
 .redes-perforaciones {
     display: flex;
-        gap: 10px;
-    margin-top: 15px;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.redes-perforaciones {
+.redes-perforaciones a {
     text-decoration: none;
     color: #111;
     font-weight: 600;
-    transition: 0.3s;
+     transition: 0.3s;
 }
+
+  
+
 
 .redes-perforaciones a:hover {
     opacity: 0.6;
 }
 
 #agendar {
-  text-align: center;
-  padding: 40px 20px;
-  border: none;          /* 🔥 elimina el borde */
-  outline: none;         /* 🔥 elimina delineado */
-  box-shadow: none;      /* 🔥 elimina sombra si tuviera */
-  display: inline-flex;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .dias {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 20px 0;
+    display: flex;
+    gap: 10px;
 }
+
 
 .dias button {
   padding: 12px 20px;
