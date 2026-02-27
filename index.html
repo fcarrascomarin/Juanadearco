@@ -58,103 +58,104 @@
                 </a>
             </div>
         </div>
+</section>
 
         <section class="productos" id="productos">
             
     
 
-    <!-- CATEGORÍAS -->
-    <div class="categorias">
-        <button class="filtro active" data-categoria="todos">Todos</button>
-        <button class="filtro" data-categoria="promesa">Promesa</button>
-        <button class="filtro" data-categoria="llama">Llama</button>
-        <button class="filtro" data-categoria="camino">Camino</button>
-    </div>
-    <div class="frase-categoria" id="fraseCategoria"></div>
+                <!-- CATEGORÍAS -->
+                <div class="categorias">
+                    <button class="filtro active" data-categoria="todos">Todos</button>
+                    <button class="filtro" data-categoria="promesa">Promesa</button>
+                    <button class="filtro" data-categoria="llama">Llama</button>
+                    <button class="filtro" data-categoria="camino">Camino</button>
+                </div>
+                <div class="frase-categoria" id="fraseCategoria"></div>
 
-    <div class="grid">
+                <div class="grid">
 
-        <!-- PROMESA -->
-        <div class="card" data-categoria="promesa">
-            <div class="slider">
-                <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
-                <img src="img1.png" class="producto-img" data-index="0"
-                    data-images="img1.png,img1-1.png">
-                <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
-            </div>
-            <p class="card-title">Cadena Veneciana</p>
-            <p class="card-text">Medida de cadena: 40 cm</p>
-            <p class="precio">$12900 (sin colgante)</p>
-            <button class="btn-principal" onclick="agregarAlCarrito('Cadena Veneciana',12900)">Agregar</button>
-            <p class="precio">$18900 (con colgante)</p>
-            <button class="btn-principal" onclick="agregarAlCarrito('Cadena Veneciana con colgante',18900)">Agregar</button>
-        </div>
+                    <!-- PROMESA -->
+                    <div class="card" data-categoria="promesa">
+                        <div class="slider">
+                            <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
+                            <img src="img1.png" class="producto-img" data-index="0"
+                                data-images="img1.png,img1-1.png">
+                            <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
+                        </div>
+                        <p class="card-title">Cadena Veneciana</p>
+                        <p class="card-text">Medida de cadena: 40 cm</p>
+                        <p class="precio">$12900 (sin colgante)</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Cadena Veneciana',12900)">Agregar</button>
+                        <p class="precio">$18900 (con colgante)</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Cadena Veneciana con colgante',18900)">Agregar</button>
+                    </div>
 
-        <div class="card" data-categoria="promesa">
-            <div class="slider">
-                <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
-                <img src="img7-1.jpg" class="producto-img" data-index="0"
-                    data-images="img7-1.jpg,img7.png">
-                <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
-            </div>
-            <p class="card-title">Anillo Ajustable Corazones Circones Rubi</p>
-            <p class="precio">$19900</p>
-            <button class="btn-principal" onclick="agregarAlCarrito('Anillo Ajustable Corazones Circones Rubi',19900)">Agregar</button>
-        </div>
+                    <div class="card" data-categoria="promesa">
+                        <div class="slider">
+                            <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
+                            <img src="img7-1.jpg" class="producto-img" data-index="0"
+                                data-images="img7-1.jpg,img7.png">
+                            <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
+                        </div>
+                        <p class="card-title">Anillo Ajustable Corazones Circones Rubi</p>
+                        <p class="precio">$19900</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Anillo Ajustable Corazones Circones Rubi',19900)">Agregar</button>
+                    </div>
 
-        <!-- LLAMA -->
-        <div class="card" data-categoria="llama">
-            <div class="slider">
-                <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
-                <img src="img3-2.jpg" class="producto-img" data-index="0"
-                    data-images="img2-1.jpg,img3.png">
-                <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
-            </div>
-            <p class="card-title">Aro Serpiente</p>
-            <p class="precio">$10900</p>
-            <button class="btn-principal" onclick="agregarAlCarrito('Aro Serpiente',10900)">Agregar</button>
-        </div>
+                    <!-- LLAMA -->
+                    <div class="card" data-categoria="llama">
+                        <div class="slider">
+                            <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
+                            <img src="img3-2.jpg" class="producto-img" data-index="0"
+                                data-images="img2-1.jpg,img3.png">
+                            <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
+                        </div>
+                        <p class="card-title">Aro Serpiente</p>
+                        <p class="precio">$10900</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Aro Serpiente',10900)">Agregar</button>
+                    </div>
 
-        <div class="card" data-categoria="llama">
-            <div class="slider">
-                <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
-                <img src="img5-1.jpg" class="producto-img" data-index="0"
-                    data-images="img5-1.jpg,img5.png">
-                <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
-            </div>
-            <p class="card-title">Conjunto Mariposa</p>
-            <p class="precio">$16900</p>
-            <button class="btn-principal" onclick="agregarAlCarrito('Conjunto Mariposa',16900)">Agregar</button>
-        </div>
+                    <div class="card" data-categoria="llama">
+                        <div class="slider">
+                            <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
+                            <img src="img5-1.jpg" class="producto-img" data-index="0"
+                                data-images="img5-1.jpg,img5.png">
+                            <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
+                        </div>
+                        <p class="card-title">Conjunto Mariposa</p>
+                        <p class="precio">$16900</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Conjunto Mariposa',16900)">Agregar</button>
+                    </div>
 
-        <!-- CAMINO -->
-        <div class="card" data-categoria="camino">
-            <div class="slider">
-                <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
-                <img src="img4-1.jpeg" class="producto-img" data-index="0"
-                    data-images="img4-1.jpeg,img4.png">
-                <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
-            </div>
-            <p class="card-title">Conjunto Luna</p>
-            <p class="precio">$27900</p>
-            <p class="card-text">Incluye 1 par de aros y un colgante (la cadena se vende por separado)</p>
-            <button class="btn-principal" onclick="agregarAlCarrito('Conjunto Luna',27900)">Agregar</button>
-        </div>
+                    <!-- CAMINO -->
+                    <div class="card" data-categoria="camino">
+                        <div class="slider">
+                            <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
+                            <img src="img4-1.jpeg" class="producto-img" data-index="0"
+                                data-images="img4-1.jpeg,img4.png">
+                            <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
+                        </div>
+                        <p class="card-title">Conjunto Luna</p>
+                        <p class="precio">$27900</p>
+                        <p class="card-text">Incluye 1 par de aros y un colgante (la cadena se vende por separado)</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Conjunto Luna',27900)">Agregar</button>
+                    </div>
 
-        <div class="card" data-categoria="camino">
-            <div class="slider">
-                <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
-                <img src="img8-1.jpg" class="producto-img" data-index="0"
-                    data-images="img8-1.jpg,img8.png">
-                <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
-            </div>
-            <p class="card-title">Anillo Ajustable Media Luna</p>
-            <p class="precio">$21900</p>
-            <button class="btn-principal" onclick="agregarAlCarrito('Anillo Ajustable Media Luna',21900)">Agregar</button>
-        </div>
+                    <div class="card" data-categoria="camino">
+                        <div class="slider">
+                            <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
+                            <img src="img8-1.jpg" class="producto-img" data-index="0"
+                                data-images="img8-1.jpg,img8.png">
+                            <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
+                        </div>
+                        <p class="card-title">Anillo Ajustable Media Luna</p>
+                        <p class="precio">$21900</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Anillo Ajustable Media Luna',21900)">Agregar</button>
+                    </div>
 
-    </div>
-</section>
+                </div>
+    </section>
 
 
     <!-- CARRITO -->
