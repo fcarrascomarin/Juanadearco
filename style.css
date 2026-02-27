@@ -90,6 +90,8 @@ body {
 
 .inicio-texto {
   flex: 1;
+  font-family: "permanent-marker";
+  align-self: center;
 }
 
 .inicio-texto h1 {
@@ -250,7 +252,7 @@ body {
     align-items:flex-start;  /* alineadas a la izquierda */
     gap: 10px;
     margin-top: 15px;
-    justify-content: center;
+    align-content: center;
 }
 
 .redes-perforaciones a {
