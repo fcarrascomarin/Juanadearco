@@ -315,6 +315,7 @@ body {
     padding: 80px 10%;
     background: #f8f6f3;
     text-align: center;
+     border-bottom: 1px solid #24c5b6;
 }
 
 .carrito-botones {
@@ -374,7 +375,7 @@ body {
     height: 260px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    
 }
 
 .producto-img {
@@ -382,6 +383,7 @@ body {
     max-height: 100%;
     object-fit: contain;
     align-items: center;
+    justify-content: center;
 }
 
   
