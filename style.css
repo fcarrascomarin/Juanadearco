@@ -315,7 +315,7 @@ body {
     padding: 80px 10%;
     background: #f8f6f3;
     text-align: center;
-     border-bottom: 1px solid #24c5b6;
+     border-bottom: 2px groove #24c5b6;
 }
 
 .carrito-botones {
