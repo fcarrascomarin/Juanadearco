@@ -249,6 +249,7 @@ body {
     align-items:flex-start;  /* alineadas a la izquierda */
     gap: 10px;
     margin-top: 15px;
+    justify-content: center;
 }
 
 .redes-perforaciones a {
