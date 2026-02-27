@@ -20,7 +20,7 @@ body {
 
 .header {
     background:#f8f6f3;
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #24c5b6;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -120,7 +120,7 @@ body {
 }
 
 .btn-amuleto:hover {
-  background-color: #000;
+  background-color: #24c5b6;
   color: #fff;
 }
 
@@ -164,7 +164,7 @@ body {
   height: 1px;
   left: 0;
   bottom: 0;
-  background: rgb(242, 240, 240);
+  background: #24c5b6;
   transition: 0.3s ease;
 }
 
@@ -282,7 +282,7 @@ body {
 
 .dias button {
   padding: 12px 20px;
-  border: 1px solid #ad8728;
+  border: 1px solid #24c5b6;
   background-color: #ad8728;
   color: #fff;
   cursor: pointer;
@@ -292,14 +292,14 @@ body {
 }
 
 .dias button:hover {
-  background-color: #ad8728;
+  background-color: #24c5b6;
 }
 
 .mensaje-agenda a {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 18px;
-  background-color: #25D366;
+  background-color: #24c5b6;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -334,12 +334,12 @@ body {
 }
 
 .btn-principal:hover {
-    background: #333;
+    background: #24c5b6;
 }
 
 .btn-secundario {
     background: transparent;
-    border: 1px solid #111;
+    border: 1px solid #ad8728;
     padding: 14px 30px;
     cursor: pointer;
     letter-spacing: 1px;
@@ -347,8 +347,8 @@ body {
 }
 
 .btn-secundario:hover {
-    background: #111;
-    color: white;
+    background: #24c5b61;
+    color: #ad8728;
 }
 
 
@@ -379,6 +379,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    align-items: center;
 }
 
   
