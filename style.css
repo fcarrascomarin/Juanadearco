@@ -240,6 +240,7 @@ body {
     flex-direction: column;
     gap: 10px;
     margin: 15px 0;
+    align-items:flex-start;
 }
 
 
