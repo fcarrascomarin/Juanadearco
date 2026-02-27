@@ -10,7 +10,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
-    color: #111;
+    color: #ad8728;
 }
 
 /* =========================
@@ -19,8 +19,8 @@ body {
 
 
 .header {
-    background: #ecc889;
-    border-bottom: 1px solid #eeeeee;
+    background:#24c5b6;
+    border-bottom: 1px solid #ad8728;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -50,7 +50,7 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: #111;
+    color: #ad8728;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -104,7 +104,7 @@ body {
   line-height: 1.6;
   margin-bottom: 30px;
   max-width: 450px;
-  color: #956330;
+  color: #ad8728;
 }
 
 .btn-amuleto {
@@ -114,7 +114,7 @@ body {
   text-decoration: none;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #956330;
+  color: #ad8728;
   transition: 0.3s ease;
   align-items: center;
 }
@@ -164,7 +164,7 @@ body {
   height: 1px;
   left: 0;
   bottom: 0;
-  background: black;
+  background: rgb(242, 240, 240);
   transition: 0.3s ease;
 }
 
@@ -197,7 +197,7 @@ body {
 
 .producto p {
   font-size: 14px;
-  color: #555;
+  color: #ad8728;
 }
 
 
@@ -255,7 +255,7 @@ body {
 
 .redes-perforaciones a {
     text-decoration: none;
-    color: #3e4341;
+    color: #ad8728;
     font-weight: 800;
      transition: 0.3s;
 }
@@ -282,8 +282,8 @@ body {
 
 .dias button {
   padding: 12px 20px;
-  border: 1px solid #ecc889;
-  background-color: #ecc889;
+  border: 1px solid #ad8728;
+  background-color: #ad8728;
   color: #fff;
   cursor: pointer;
   border-radius: 8px;
@@ -292,7 +292,7 @@ body {
 }
 
 .dias button:hover {
-  background-color: #ecc889;
+  background-color: #ad8728;
 }
 
 .mensaje-agenda a {
@@ -324,7 +324,7 @@ body {
 }
 
 .btn-principal {
-    background:#ecc889;
+    background:#ad8728;
     color: white;
     border: none;
     padding: 14px 30px;
@@ -388,7 +388,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background:#ecc889;
+    background:#ad8728;
     color: white;
     border: none;
     padding: 6px 10px;
@@ -412,7 +412,7 @@ footer {
     text-align: center;
     padding: 30px;
     font-size: 14px;
-    border-top: 1px solid #f8f6f3;
+    border-top: 1px solid #24c5b6 ;
 }
 
 /* =========================
