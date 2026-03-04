@@ -35,8 +35,8 @@ body {
 .nav-container {
     max-width: 1000px;
     margin: auto;
-    padding: 0 30%; /* Reduje el padding lateral del 10% al 5% */
-    height: 40px;   /* Cambié de 100px a 60px */
+    padding: 0 5%; /* Reduje el padding lateral del 10% al 5% */
+    height: 60px;   /* Cambié de 100px a 60px */
     display: flex;
     align-items: center;
     justify-content: space-between;
