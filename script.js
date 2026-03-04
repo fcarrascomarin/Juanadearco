@@ -105,9 +105,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const frases = {
         todos: "",
-        promesa: "Las promesas no se dicen, se llevan.",
-        llama: "Lo que arde en tu interior merece brillar.",
-        camino: "Cada paso deja una huella en tu historia."
+        conviccion: "Las promesas no se dicen, se llevan.",
+        transformacion: "Lo que arde en tu interior merece brillar.",
+        origen: "Cada paso deja una huella en tu historia."
     };
 
     filtros.forEach(boton => {
@@ -119,15 +119,15 @@ document.addEventListener("DOMContentLoaded", function () {
             const categoria = boton.dataset.categoria;
 
             // Reset fondo
-            seccionProductos.classList.remove("promesa-bg", "llama-bg", "camino-bg");
+            seccionProductos.classList.remove("conviccion-bg", "transformacion-bg", "origen-bg");
 
-            if (categoria === "promesa") {
+            if (categoria === "conviccion") {
                 seccionProductos.classList.add("promesa-bg");
             }
-            if (categoria === "llama") {
+            if (categoria === "transformacion") {
                 seccionProductos.classList.add("llama-bg");
             }
-            if (categoria === "camino") {
+            if (categoria === "origen") {
                 seccionProductos.classList.add("camino-bg");
             }
 

@@ -61,99 +61,131 @@
 </section>
 
         <section class="productos" id="productos">
-            
-    
-
                 <!-- CATEGORÍAS -->
-                <div class="categorias">
+               <div class="categorias">
                     <button class="filtro active" data-categoria="todos">Todos</button>
-                    <button class="filtro" data-categoria="promesa">Convicción</button>
-                    <button class="filtro" data-categoria="llama">Transformación</button>
-                    <button class="filtro" data-categoria="camino">Dirección</button>
+                    <button class="filtro" data-categoria="conviccion">Convicción</button>
+                    <button class="filtro" data-categoria="transformacion">Transformación</button>
+                    <button class="filtro" data-categoria="origen">Origen</button>
                 </div>
                 <div class="frase-categoria" id="fraseCategoria"></div>
 
                 <div class="grid">
 
-                    <!-- CONVICCION -->
-                    <div class="card" data-categoria="conviccion">
-                        <div class="slider">
-                            <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
-                            <img src="setestrellas.webp" class="producto-img" data-index="0"
-                                data-images="setestrellas.webp,img2-2.jpg">
-                            <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
-                        </div>
-                        <p class="card-title">Set Aros Estrellas Circones</p>
-                        <p class="card-text">Estrellas, amuleto de los deseos</p>
-                         <p class="precio">$24900 (con colgante)</p>
-                         <p> <small>3 pares de aros de distinto diámetro</small></p>
-                        <button class="btn-principal" onclick="agregarAlCarrito('Set Aros Estrellas Circones',24900)">Agregar</button>
+                    <!-- ORIGEN -->
+
+                    <div class="card" data-categoria="origen">
+                        <img src="img1.jpg" class="producto-img">
+                        <p class="card-title">Cadena Veneciana</p>
+                        <p class="precio">$12900</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Cadena Veneciana',12900)">Agregar</button>
                     </div>
 
-                    <div class="card" data-categoria="conviccion">
-                        <div class="slider">
-                            <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
-                            <img src="argaatrapa.webp" class="producto-img" data-index="0"
-                                data-images="argaatrapa.webp,img7.png">
-                            <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
-                        </div>
-                        <p class="card-title">Argolla Atrapasueños</p>
+                    <div class="card" data-categoria="origen">
+                        <img src="argbali.webp" class="producto-img">
+                        <p class="card-title">Argolla Bali Trenzada 16 mm</p>
+                        <p class="precio">$13900</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Argolla Bali Trenzada 16 mm',13900)">Agregar</button>
+                    </div>
+
+                    <div class="card" data-categoria="origen">
+                        <img src="argaatrapa.webp" class="producto-img">
+                        <p class="card-title">Argolla Atrapasueños 16 mm</p>
                         <p class="precio">$15900</p>
-                        <button class="btn-principal" onclick="agregarAlCarrito('Argolla Atrapasueños',15900)">Agregar</button>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Argolla Atrapasueños 16 mm',15900)">Agregar</button>
                     </div>
 
-                    <!-- Transformacion -->
-                    <div class="card" data-categoria="transformacion>
-                        <div class="slider">
-                            <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
-                            <img src="img3-2.jpg" class="producto-img" data-index="0"
-                                data-images="img2-1.jpg,img3.png">
-                            <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
-                        </div>
+                    <div class="card" data-categoria="origen">
+                        <img src="argnudo.webp" class="producto-img">
+                        <p class="card-title">Argolla Nudo 16 mm</p>
+                        <p class="precio">$13900</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Argolla Nudo 16 mm',13900)">Agregar</button>
+                    </div>
+
+                    <div class="card" data-categoria="origen">
+                        <img src="img14.jpg" class="producto-img">
+                        <p class="card-title">Argolla Túnel 14 mm</p>
+                        <p class="precio">$10900</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Argolla Túnel 14 mm',10900)">Agregar</button>
+                    </div>
+
+                    <div class="card" data-categoria="origen">
+                        <img src="img15.jpg" class="producto-img">
+                        <p class="card-title">Argolla Lisa 10 mm</p>
+                        <p class="precio">$9500</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Argolla Lisa 10 mm',9500)">Agregar</button>
+                    </div>
+
+                    <div class="card" data-categoria="origen">
+                        <img src="img16.jpg" class="producto-img">
+                        <p class="card-title">Argolla Lisa 8 mm</p>
+                        <p class="precio">$7600</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Argolla Lisa 8 mm',7600)">Agregar</button>
+                    </div>
+
+
+                    <!-- TRANSFORMACIÓN -->
+
+                    <div class="card" data-categoria="transformacion">
+                        <img src="img2.jpg" class="producto-img">
                         <p class="card-title">Aro Serpiente</p>
                         <p class="precio">$10900</p>
                         <button class="btn-principal" onclick="agregarAlCarrito('Aro Serpiente',10900)">Agregar</button>
                     </div>
 
                     <div class="card" data-categoria="transformacion">
-                        <div class="slider">
-                            <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
-                            <img src="img5-1.jpg" class="producto-img" data-index="0"
-                                data-images="img5-1.jpg,img5.png">
-                            <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
-                        </div>
-                        <p class="card-title">Conjunto Mariposa</p>
-                        <p class="precio">$16900</p>
-                        <button class="btn-principal" onclick="agregarAlCarrito('Conjunto Mariposa',16900)">Agregar</button>
-                    </div>
-
-                    <!-- DIRECCION -->
-                    <div class="card" data-categoria="direccion">
-                        <div class="slider">
-                            <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
-                            <img src="img4-1.jpeg" class="producto-img" data-index="0"
-                                data-images="img4-1.jpeg,img4.png">
-                            <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
-                        </div>
-                        <p class="card-title">Conjunto Luna</p>
+                        <img src="img3.jpg" class="producto-img">
+                        <p class="card-title">Conjunto Media Luna Circones</p>
                         <p class="precio">$27900</p>
-                        <p class="card-text">Incluye 1 par de aros y un colgante (la cadena se vende por separado)</p>
-                        <button class="btn-principal" onclick="agregarAlCarrito('Conjunto Luna',27900)">Agregar</button>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Conjunto Media Luna Circones',27900)">Agregar</button>
                     </div>
 
-                    <div class="card" data-categoria="direccion">
-                        <div class="slider">
-                            <button class="prev" onclick="cambiarImagen(this, -1)">❮</button>
-                            <img src="img8-1.jpg" class="producto-img" data-index="0"
-                                data-images="img8-1.jpg,img8.png">
-                            <button class="next" onclick="cambiarImagen(this, 1)">❯</button>
-                        </div>
-                        <p class="card-title">Anillo Ajustable Media Luna</p>
+                    <div class="card" data-categoria="transformacion">
+                        <img src="img4.jpg" class="producto-img">
+                        <p class="card-title">Aros Mariposa</p>
+                        <p class="precio">$16900</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Aros Mariposa',16900)">Agregar</button>
+                    </div>
+
+                    <div class="card" data-categoria="transformacion">
+                        <img src="img5.jpg" class="producto-img">
+                        <p class="card-title">Aro Flor Circones</p>
+                        <p class="precio">$15900</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Aro Flor Circones',15900)">Agregar</button>
+                    </div>
+
+                    <div class="card" data-categoria="transformacion">
+                        <img src="img6.jpg" class="producto-img">
+                        <p class="card-title">Aro Estrella de Mar 12 mm</p>
+                        <p class="precio">$15900</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Aro Estrella de Mar 12 mm',15900)">Agregar</button>
+                    </div>
+
+
+                    <!-- CONVICCIÓN -->
+
+                    <div class="card" data-categoria="conviccion">
+                        <img src="setestrellas.webp" class="producto-img">
+                        <p class="card-title">Set Aros Minimalista Estrellas Circones</p>
+                        <p class="precio">$24900</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Set Aros Minimalista Estrellas Circones',24900)">Agregar</button>
+                    </div>
+
+                    <div class="card" data-categoria="conviccion">
+                        <img src="img7.jpg" class="producto-img">
+                        <p class="card-title">Anillo Ajustable Corazones Circones Rubí</p>
+                        <p class="precio">$19900</p>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Anillo Ajustable Corazones Circones Rubí',19900)">Agregar</button>
+                    </div>
+
+                    <div class="card" data-categoria="conviccion">
+                        <img src="img8.jpg" class="producto-img">
+                        <p class="card-title">Anillo Ajustable Media Luna Estrella Circones</p>
                         <p class="precio">$21900</p>
-                        <button class="btn-principal" onclick="agregarAlCarrito('Anillo Ajustable Media Luna',21900)">Agregar</button>
+                        <button class="btn-principal" onclick="agregarAlCarrito('Anillo Ajustable Media Luna Estrella Circones',21900)">Agregar</button>
                     </div>
 
-                </div>
+</div>
     </section>
 
 
