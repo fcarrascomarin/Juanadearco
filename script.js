@@ -105,9 +105,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const frases = {
         todos: "",
-        conviccion: "Las promesas no se dicen, se llevan.",
-        transformacion: "Lo que arde en tu interior merece brillar.",
-        origen: "Cada paso deja una huella en tu historia."
+        conviccion: "La fuerza que te sostiene",
+        transformacion: "El cambio que te define",
+        origen: "Un simbolo para cada historia"
     };
 
     filtros.forEach(boton => {
