@@ -125,7 +125,7 @@ body {
 .inicio-texto a {
   display: inline-block;
   padding: 14px 36px;
-  border: 1px solid #2b2b2b;
+  border: 1px solid #a67c2e;
   text-decoration: none;
   font-size: 18px;
   letter-spacing: 1px;
@@ -137,7 +137,7 @@ body {
 /* EFECTO HOVER ELEGANTE */
 
 .inicio-texto a:hover {
-  background-color: #a67c2e;
+  background-color: #2b2b2b;
   color: white;
   border-color: #a67c2e;
 }
