@@ -98,6 +98,7 @@ body {
   flex: 1;
   font-family: "Sue Ellen Francisco";
   align-self: center;
+  font-weight: 400;
 }
 
 .inicio-texto h1 {
