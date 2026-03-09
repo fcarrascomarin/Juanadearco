@@ -106,7 +106,6 @@ body {
 
 .inicio-texto {
   max-width: 420px;
-  font-family: "Sue Ellen Francisco", cursive;
   color: #a67c2e;
 }
 
@@ -118,6 +117,7 @@ body {
   line-height: 1.6;
   margin-bottom: 45px;
   letter-spacing: 1px;
+  font-family: "Sue Ellen Francisco", cursive;
 }
 
 /* BOTON */
