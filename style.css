@@ -83,67 +83,64 @@ body {
 ========================= */
 
 .inicio {
-  padding: 80px 10%;
+  padding: 120px 10%;
   background-color: #f8f6f3;
 }
 
 .inicio-contenido {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 60px;
+  justify-content: center;
+  gap: 100px;
 }
+
+/* IMAGEN */
+
+.inicio-imagen img {
+  width: 520px;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+/* TEXTO */
 
 .inicio-texto {
-  flex: 1;
-  font-family: "Sue Ellen Francisco";
-  align-self: center;
-  font-weight: 400;
+  max-width: 420px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #a67c2e;
 }
+
+/* FRASE */
 
 .inicio-texto h1 {
-  font-size: 400px;
-  font-weight: 800;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-}
-
-.inicio-texto p {
-  font-size: 18px;
+  font-size: 30px;
+  font-weight: 400;
   line-height: 1.6;
-  margin-bottom: 30px;
-  max-width: 450px;
-  color: #ad8728;
-}
-
-.btn-amuleto {
-  display: inline-block;
-  padding: 12px 28px;
-  border: 1px solid #000;
-  text-decoration: none;
-  font-size: 14px;
+  margin-bottom: 45px;
   letter-spacing: 1px;
-  color: #ad8728;
-  transition: 0.3s ease;
-  align-items: center;
 }
 
-.btn-amuleto:hover {
-  background-color: #000;
-  color: #fff;
+/* BOTON */
+
+.inicio-texto a {
+  display: inline-block;
+  padding: 14px 36px;
+  border: 1px solid #2b2b2b;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #a67c2e;
+  background: transparent;
+  transition: all 0.35s ease;
 }
 
-.inicio-imagen {
-  flex: 1;
+/* EFECTO HOVER ELEGANTE */
+
+.inicio-texto a:hover {
+  background-color: #a67c2e;
+  color: white;
+  border-color: #a67c2e;
 }
-
-.inicio-imagen {
- 
-  height: auto;
-  border-radius: 8px;
-}
-
-
 
 
 
