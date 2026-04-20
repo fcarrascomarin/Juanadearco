@@ -9,10 +9,11 @@ function agregarAlCarrito(nombre, precio) {
     carrito.push({ nombre, precio });
     total += precio;
     actualizarCarrito();
-    // 🔥 SCROLL AL CARRITO
-    document.getElementById("carrito").scrollIntoView({
-        behavior: "smooth"
-    });
+
+    const carritoEl = document.getElementById("carrito");
+    if (carritoEl) {
+        carritoEl.scrollIntoView({ behavior: "smooth" });
+    }
 }
 
 function actualizarCarrito() {
@@ -36,6 +37,8 @@ function actualizarCarrito() {
 }
 
 function eliminarProducto(index) {
+    if (!carrito[index]) return;
+
     total -= carrito[index].precio;
     carrito.splice(index, 1);
     actualizarCarrito();
@@ -47,39 +50,45 @@ function enviarWhatsApp() {
         return;
     }
 
-    let mensaje = "Hola! Quiero comprar:%0A";
+    let mensaje = "Hola! Quiero comprar:\n";
 
     carrito.forEach(producto => {
-        mensaje += `- ${producto.nombre} ($${producto.precio})%0A`;
+        mensaje += `- ${producto.nombre} ($${producto.precio})\n`;
     });
 
-    mensaje += `%0ATotal: $${total}`;
+    mensaje += `\nTotal: $${total}`;
 
-    const numero = "56923770543"; // SIN +
-    const url = `https://wa.me/${numero}?text=${mensaje}`;
+    const numero = "56923770543";
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 
     window.open(url, "_blank");
 }
 
 function enviardia(dia) {
-  const numero = "56998920489"; // 🔥 CAMBIÁ ESTO POR TU NÚMERO
-  const mensaje = `Hola! Quiero agendar una perforación para el día ${dia}. ¿Está disponible?`;
-  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
-  window.open(url, "_blank");
-}
-function enviarconsulta(perforaciones) {
-  const numero = "56998920489"; // 🔥 CAMBIÁ ESTO POR TU NÚMERO
-  const mensaje = `Hola! Quiero consultar por tipos de ${perforaciones}`;
-  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
-  window.open(url, "_blank");
+    const numero = "56998920489";
+    const mensaje = `Hola! Quiero agendar una perforación para el día ${dia}. ¿Está disponible?`;
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
 }
 
+function enviarconsulta(perforaciones) {
+    const numero = "56998920489";
+    const mensaje = `Hola! Quiero consultar por tipos de ${perforaciones}`;
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
+}
+
+/* =========================
+   CAMBIO DE IMAGEN PRODUCTO
+========================= */
 
 function cambiarImagen(boton, direccion) {
-
     const img = boton.parentElement.querySelector(".producto-img");
+
+    if (!img || !img.dataset.images) return;
+
     const imagenes = img.dataset.images.split(",");
-    let index = parseInt(img.dataset.index);
+    let index = parseInt(img.dataset.index || 0);
 
     index += direccion;
 
@@ -91,10 +100,16 @@ function cambiarImagen(boton, direccion) {
 }
 
 function seguirComprando() {
-    document.getElementById("productos").scrollIntoView({
-        behavior: "smooth"
-    });
+    const productos = document.getElementById("productos");
+    if (productos) {
+        productos.scrollIntoView({ behavior: "smooth" });
+    }
 }
+
+/* =========================
+   FILTROS + FRASE + IMAGEN
+========================= */
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const filtros = document.querySelectorAll(".filtro");
@@ -117,10 +132,10 @@ document.addEventListener("DOMContentLoaded", function () {
             imagen: "img/transformacion.jpg"
         },
         origen: {
-            frase: "Un simbolo para cada historia",
+            frase: "Un símbolo para cada historia",
             imagen: "img/origen.jpg"
         }
-    );
+    };
 
     filtros.forEach(boton => {
         boton.addEventListener("click", () => {
@@ -132,35 +147,39 @@ document.addEventListener("DOMContentLoaded", function () {
             const contenido = contenidoCategoria[categoria];
 
             // Fondo
-            seccionProductos.classList.remove("promesa-bg", "llama-bg", "camino-bg");
+            if (seccionProductos) {
+                seccionProductos.classList.remove("promesa-bg", "llama-bg", "camino-bg");
 
-            if (categoria === "conviccion") {
-                seccionProductos.classList.add("promesa-bg");
-            }
-            if (categoria === "transformacion") {
-                seccionProductos.classList.add("llama-bg");
-            }
-            if (categoria === "origen") {
-                seccionProductos.classList.add("camino-bg");
+                if (categoria === "conviccion") {
+                    seccionProductos.classList.add("promesa-bg");
+                }
+                if (categoria === "transformacion") {
+                    seccionProductos.classList.add("llama-bg");
+                }
+                if (categoria === "origen") {
+                    seccionProductos.classList.add("camino-bg");
+                }
             }
 
             // Frase + imagen
-            frase.classList.remove("visible");
-            imagen.classList.remove("visible");
+            if (frase && imagen) {
+                frase.classList.remove("visible");
+                imagen.classList.remove("visible");
 
-            if (contenido) {
-                frase.textContent = contenido.frase;
-                imagen.src = contenido.imagen;
+                if (contenido) {
+                    frase.textContent = contenido.frase;
+                    imagen.src = contenido.imagen;
+                }
+
+                setTimeout(() => {
+                    if (contenido) {
+                        frase.classList.add("visible");
+                        imagen.classList.add("visible");
+                    }
+                }, 100);
             }
 
-                        setTimeout(() => {
-                if (contenido) {
-                    frase.classList.add("visible");
-                    imagen.classList.add("visible");
-                }
-            }, 100);
-
-            // Filtro de productos
+            // Filtro productos
             cards.forEach(card => {
                 if (categoria === "todos" || card.dataset.categoria === categoria) {
                     card.style.display = "block";
@@ -172,8 +191,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // Estado inicial (muy importante)
+    const filtroInicial = document.querySelector(".filtro[data-categoria='todos']");
+    if (filtroInicial) {
+        filtroInicial.click();
+    }
 });
-
 
 /* =========================
    MENU HAMBURGUESA
@@ -188,4 +211,4 @@ document.addEventListener("DOMContentLoaded", function () {
             nav.classList.toggle("active");
         });
     }
-);
+});
