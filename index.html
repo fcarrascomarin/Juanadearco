@@ -25,6 +25,37 @@
 
 <header class="header">
     <div class="nav-container">
+        <div class="header-actions">
+  <div class="cart-wrapper">
+    <button class="cart-toggle" id="cartToggle" aria-label="Abrir carrito">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+    <div class="cart-dropdown" id="cartDropdown">
+      <div class="cart-dropdown-header">
+        <h3>Tu carrito</h3>
+        <button class="cart-close" id="cartClose" aria-label="Cerrar carrito">×</button>
+      </div>
+
+      <ul id="lista-carrito" class="cart-items"></ul>
+
+      <p class="total">
+        Total: $<span id="total">0</span>
+      </p>
+
+      <div class="carrito-botones">
+        <button class="btn-secundario" onclick="seguirComprando()">
+          Seguir comprando
+        </button>
+
+        <button class="btn-principal" onclick="enviarWhatsApp()">
+          Finalizar por WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
         <div class="logo">
             <img src="./logo-1d.PNG" alt="Juana de Arco">
         </div>
@@ -253,24 +284,7 @@
   </div>
 </section>
 
-  <section class="carrito" id="carrito">
-    <h2>Tu carrito</h2>
-    <ul id="lista-carrito"></ul>
 
-    <p class="total">
-      Total: $<span id="total">0</span>
-    </p>
-
-    <div class="carrito-botones">
-      <button class="btn-secundario" onclick="seguirComprando()">
-        Agregar más productos
-      </button>
-
-      <button class="btn-principal" onclick="enviarWhatsApp()">
-        Finalizar por WhatsApp
-      </button>
-    </div>
-  </section>
 
 <!-- Perforaciones certificadas -->
         <section class="perforaciones" id="perforaciones">
