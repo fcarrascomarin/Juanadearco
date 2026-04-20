@@ -156,8 +156,8 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(() => {
                 if (contenido) {
                     frase.classList.add("visible");
-                    imagen.classList.add("visible");}
-                , 100;});
+                    imagen.classList.add("visible");
+                , 100)};
 
             // Filtro de productos
             cards.forEach(card => {
