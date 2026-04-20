@@ -95,7 +95,7 @@ function seguirComprando() {
         behavior: "smooth"
     });
 }
-
+//secciones
 document.addEventListener("DOMContentLoaded", function () {
 
     const filtros = document.querySelectorAll(".filtro");
