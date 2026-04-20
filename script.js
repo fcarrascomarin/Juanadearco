@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const seccionProductos = document.getElementById("productos");
 
     const frases = {
-        todos: "",
+        todos: "Joyas que representan historias",
         conviccion: "La fuerza que te sostiene",
         transformacion: "El cambio que te define",
         origen: "Un simbolo para cada historia"
