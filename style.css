@@ -507,10 +507,10 @@ body {
    CARRITO
 ========================= */
 .carrito {
-    padding: 80px 10%;
-    background: #f8f6f3;
-    text-align: center;
-     border-bottom: 2px groove #ad8728;
+    padding: 0;
+    background: transparent;
+    text-align: left;
+    border-bottom: none;
 }
 
 .carrito-botones {
@@ -712,6 +712,25 @@ footer {
 .slider {
   width: 100%;
   height: auto;
+}
+.catalogo-header,
+.frase-categoria {
+  align-items: center;
+  text-align: center;
+}
+
+.catalogo-titulo,
+.catalogo-bajada,
+.frase-categoria h3 {
+  text-align: center;
+}
+
+.carrito-lateral {
+  text-align: center;
+}
+
+.carrito-lateral .carrito-botones {
+  justify-content: center;
 }
 
     /* ================= PERFORACIONES ================= */
