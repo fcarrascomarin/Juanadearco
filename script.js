@@ -106,17 +106,20 @@ function seguirComprando() {
     }
 }
 
+
 /* =========================
-   FILTROS + FRASE + IMAGEN
+   FILTROS + FRASE + IMAGEN + TIPO
 ========================= */
 
 document.addEventListener("DOMContentLoaded", function () {
-
-    const filtros = document.querySelectorAll(".filtro");
+    const filtrosCategoria = document.querySelectorAll(".filtro");
+    const filtrosTipo = document.querySelectorAll(".filtro-tipo");
     const cards = document.querySelectorAll(".card");
     const frase = document.getElementById("fraseCategoria");
-    const seccionProductos = document.getElementById("productos");
     const imagen = document.getElementById("imagenCategoria");
+
+    let categoriaActiva = "todos";
+    let tipoActivo = "todos";
 
     const contenidoCategoria = {
         todos: {
@@ -137,65 +140,65 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    filtros.forEach(boton => {
-        boton.addEventListener("click", () => {
+    function actualizarContenidoCategoria() {
+        const contenido = contenidoCategoria[categoriaActiva];
 
-            filtros.forEach(b => b.classList.remove("active"));
+        if (frase && imagen && contenido) {
+            frase.classList.remove("visible");
+            imagen.classList.remove("visible");
+
+            frase.textContent = contenido.frase;
+            imagen.src = contenido.imagen;
+
+            setTimeout(() => {
+                frase.classList.add("visible");
+                imagen.classList.add("visible");
+            }, 100);
+        }
+    }
+
+    function aplicarFiltros() {
+        cards.forEach(card => {
+            const categoriaCard = card.dataset.categoria;
+            const tipoCard = card.dataset.tipo;
+
+            const coincideCategoria =
+                categoriaActiva === "todos" || categoriaCard === categoriaActiva;
+
+            const coincideTipo =
+                tipoActivo === "todos" || tipoCard === tipoActivo;
+
+            if (coincideCategoria && coincideTipo) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    }
+
+    filtrosCategoria.forEach(boton => {
+        boton.addEventListener("click", () => {
+            filtrosCategoria.forEach(b => b.classList.remove("active"));
             boton.classList.add("active");
 
-            const categoria = boton.dataset.categoria;
-            const contenido = contenidoCategoria[categoria];
-
-            // Fondo
-            if (seccionProductos) {
-                seccionProductos.classList.remove("promesa-bg", "llama-bg", "camino-bg");
-
-                if (categoria === "conviccion") {
-                    seccionProductos.classList.add("promesa-bg");
-                }
-                if (categoria === "transformacion") {
-                    seccionProductos.classList.add("llama-bg");
-                }
-                if (categoria === "origen") {
-                    seccionProductos.classList.add("camino-bg");
-                }
-            }
-
-            // Frase + imagen
-            if (frase && imagen) {
-                frase.classList.remove("visible");
-                imagen.classList.remove("visible");
-
-                if (contenido) {
-                    frase.textContent = contenido.frase;
-                    imagen.src = contenido.imagen;
-                }
-
-                setTimeout(() => {
-                    if (contenido) {
-                        frase.classList.add("visible");
-                        imagen.classList.add("visible");
-                    }
-                }, 100);
-            }
-
-            // Filtro productos
-            cards.forEach(card => {
-                if (categoria === "todos" || card.dataset.categoria === categoria) {
-                    card.style.display = "block";
-                } else {
-                    card.style.display = "none";
-                }
-            });
-
+            categoriaActiva = boton.dataset.categoria;
+            actualizarContenidoCategoria();
+            aplicarFiltros();
         });
     });
 
-    // Estado inicial (muy importante)
-    const filtroInicial = document.querySelector(".filtro[data-categoria='todos']");
-    if (filtroInicial) {
-        filtroInicial.click();
-    }
+    filtrosTipo.forEach(boton => {
+        boton.addEventListener("click", () => {
+            filtrosTipo.forEach(b => b.classList.remove("active"));
+            boton.classList.add("active");
+
+            tipoActivo = boton.dataset.tipo;
+            aplicarFiltros();
+        });
+    });
+
+    actualizarContenidoCategoria();
+    aplicarFiltros();
 });
 
 /* =========================
