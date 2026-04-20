@@ -230,28 +230,28 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.04);
 }
 
-.carrito-lateral h2 {
+.carrito h2 {
   font-size: 22px;
   margin-bottom: 14px;
   color: #1f1f1f;
 }
 
-.carrito-lateral .total {
+.carrito .total {
   margin-top: 16px;
   font-weight: 700;
   color: #1f1f1f;
 }
 
-.carrito-lateral .carrito-botones {
+.carrito .carrito-botones {
   justify-content: flex-start;
 }
 
-.carrito-lateral ul {
+.carrito ul {
   padding-left: 18px;
   margin-bottom: 0;
 }
 
-.carrito-lateral li {
+.carrito li {
   margin-bottom: 8px;
   color: #4b4b4b;
 }
