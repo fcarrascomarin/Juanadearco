@@ -19,6 +19,7 @@ function agregarAlCarrito(nombre, precio) {
 function actualizarCarrito() {
     const lista = document.getElementById("lista-carrito");
     const totalElemento = document.getElementById("total");
+    const cartCount = document.getElementById("cartCount");
 
     if (!lista || !totalElemento) return;
 
@@ -27,13 +28,32 @@ function actualizarCarrito() {
     carrito.forEach((producto, index) => {
         const li = document.createElement("li");
         li.innerHTML = `
-            ${producto.nombre} - $${producto.precio}
+            <span>${producto.nombre} - $${producto.precio}</span>
             <button onclick="eliminarProducto(${index})">X</button>
         `;
         lista.appendChild(li);
     });
 
+    if (carrito.length === 0) {
+        lista.innerHTML = `<li><span>Tu carrito está vacío.</span></li>`;
+    }
+
     totalElemento.textContent = total;
+
+    if (cartCount) {
+        cartCount.textContent = carrito.length;
+    }
+}
+function seguirComprando() {
+    const cartDropdown = document.getElementById("cartDropdown");
+    if (cartDropdown) {
+        cartDropdown.classList.remove("open");
+    }
+
+    const productos = document.getElementById("productos");
+    if (productos) {
+        productos.scrollIntoView({ behavior: "smooth" });
+    }
 }
 
 function eliminarProducto(index) {
@@ -214,4 +234,35 @@ document.addEventListener("DOMContentLoaded", function () {
             nav.classList.toggle("active");
         });
     }
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const cartToggle = document.getElementById("cartToggle");
+    const cartDropdown = document.getElementById("cartDropdown");
+    const cartClose = document.getElementById("cartClose");
+
+    if (cartToggle && cartDropdown) {
+        cartToggle.addEventListener("click", function (e) {
+            e.stopPropagation();
+            cartDropdown.classList.toggle("open");
+        });
+    }
+
+    if (cartClose && cartDropdown) {
+        cartClose.addEventListener("click", function () {
+            cartDropdown.classList.remove("open");
+        });
+    }
+
+    document.addEventListener("click", function (e) {
+        if (
+            cartDropdown &&
+            cartToggle &&
+            !cartDropdown.contains(e.target) &&
+            !cartToggle.contains(e.target)
+        ) {
+            cartDropdown.classList.remove("open");
+        }
+    });
+
+    actualizarCarrito();
 });
