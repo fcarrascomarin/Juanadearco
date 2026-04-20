@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const contenidoCategoria = {
         todos: {
             frase: "Joyas que representan historias",
-            imagen: "img/todos.jpg"
+            imagen: "todos.jpg"
         },
         conviccion: {
             frase: "La fuerza que te sostiene",
