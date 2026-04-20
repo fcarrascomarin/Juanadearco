@@ -125,15 +125,15 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         conviccion: {
             frase: "La fuerza que te sostiene",
-            imagen: "img/conviccion.jpg"
+            imagen: "conviccio.jpg"
         },
         transformacion: {
             frase: "El cambio que te define",
-            imagen: "img/transformacion.jpg"
+            imagen: "transformacion.jpg"
         },
         origen: {
             frase: "Un símbolo para cada historia",
-            imagen: "img/origen.jpg"
+            imagen: "origen.jpg"
         }
     };
 
