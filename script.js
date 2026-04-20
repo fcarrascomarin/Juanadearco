@@ -153,11 +153,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 imagen.src = contenido.imagen;
             }
 
-            setTimeout(() => {
+                        setTimeout(() => {
                 if (contenido) {
                     frase.classList.add("visible");
                     imagen.classList.add("visible");
-                }, 100;)};
+                }
+            }, 100);
 
             // Filtro de productos
             cards.forEach(card => {
