@@ -274,7 +274,7 @@ body {
 }
 
 .imagen-categoria {
-  width: 100%;
+  width: 50%;
   max-width: 320px;
   border-radius: 12px;
   object-fit: cover;
