@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     frase.classList.add("visible");
                     imagen.classList.add("visible");
                 }
-            }, 100);
+            }, 100});
 
             // Filtro de productos
             cards.forEach(card => {
