@@ -95,19 +95,31 @@ function seguirComprando() {
         behavior: "smooth"
     });
 }
-//secciones
 document.addEventListener("DOMContentLoaded", function () {
 
     const filtros = document.querySelectorAll(".filtro");
     const cards = document.querySelectorAll(".card");
     const frase = document.getElementById("fraseCategoria");
     const seccionProductos = document.getElementById("productos");
+    const imagen = document.getElementById("imagenCategoria");
 
-    const frases = {
-        todos: "Joyas que representan historias",
-        conviccion: "La fuerza que te sostiene",
-        transformacion: "El cambio que te define",
-        origen: "Un simbolo para cada historia"
+    const contenidoCategoria = {
+        todos: {
+            frase: "Joyas que representan historias",
+            imagen: "img/todos.jpg"
+        },
+        conviccion: {
+            frase: "La fuerza que te sostiene",
+            imagen: "img/conviccion.jpg"
+        },
+        transformacion: {
+            frase: "El cambio que te define",
+            imagen: "img/transformacion.jpg"
+        },
+        origen: {
+            frase: "Un simbolo para cada historia",
+            imagen: "img/origen.jpg"
+        }
     };
 
     filtros.forEach(boton => {
@@ -117,9 +129,10 @@ document.addEventListener("DOMContentLoaded", function () {
             boton.classList.add("active");
 
             const categoria = boton.dataset.categoria;
+            const contenido = contenidoCategoria[categoria];
 
-            // Reset fondo
-            seccionProductos.classList.remove("conviccion-bg", "transformacion-bg", "origen-bg");
+            // Fondo
+            seccionProductos.classList.remove("promesa-bg", "llama-bg", "camino-bg");
 
             if (categoria === "conviccion") {
                 seccionProductos.classList.add("promesa-bg");
@@ -131,17 +144,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 seccionProductos.classList.add("camino-bg");
             }
 
-            // Frase animada
+            // Frase + imagen
             frase.classList.remove("visible");
-            frase.textContent = frases[categoria] || "";
+            imagen.classList.remove("visible");
+
+            if (contenido) {
+                frase.textContent = contenido.frase;
+                imagen.src = contenido.imagen;
+            }
 
             setTimeout(() => {
-                if (frases[categoria]) {
+                if (contenido) {
                     frase.classList.add("visible");
+                    imagen.classList.add("visible");
                 }
             }, 100);
 
-            // Filtrar productos
+            // Filtro de productos
             cards.forEach(card => {
                 if (categoria === "todos" || card.dataset.categoria === categoria) {
                     card.style.display = "block";

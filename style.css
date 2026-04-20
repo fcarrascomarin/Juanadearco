@@ -227,6 +227,20 @@ body {
 .card-text {
   padding-right: 10px;
 }
+
+/* =========================
+   categorias productos
+========================= */
+
+.imagen-categoria {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    max-width: 100%;
+}
+
+.imagen-categoria.visible {
+    opacity: 1;
+}
 /* =========================
    PERFORACIONES
 ========================= */
