@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         conviccion: {
             frase: "La fuerza que te sostiene",
-            imagen: "conviccio.jpg"
+            imagen: "conviccion.jpg"
         },
         transformacion: {
             frase: "El cambio que te define",
