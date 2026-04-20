@@ -61,28 +61,63 @@
   <div class="productos-layout">
 
     <!-- COLUMNA IZQUIERDA -->
-    <aside class="productos-sidebar">
-      <div class="frase-categoria">
-        <img id="imagenCategoria" src="" alt="Imagen categoría" class="imagen-categoria">
-        <h2 id="fraseCategoria"></h2>
-      </div>
+   <aside class="productos-sidebar">
 
-      <div class="filtros-wrap">
-        <div class="categorias">
-          <button class="filtro active" data-categoria="todos">Todos</button>
-          <button class="filtro" data-categoria="conviccion">Convicción</button>
-          <button class="filtro" data-categoria="transformacion">Transformación</button>
-          <button class="filtro" data-categoria="origen">Origen</button>
-        </div>
+  <div class="catalogo-header">
+    <p class="catalogo-eyebrow">Catálogo</p>
+    <h2 class="catalogo-titulo">Elige tu joya</h2>
+    <p class="catalogo-bajada">
+      Explora por temática o clasifica por tipo para encontrar el amuleto que conecte contigo.
+    </p>
+  </div>
 
-        <div class="tipos">
-          <button class="filtro-tipo active" data-tipo="todos">Todos</button>
-          <button class="filtro-tipo" data-tipo="aros">Aros</button>
-          <button class="filtro-tipo" data-tipo="anillos">Anillos</button>
-          <button class="filtro-tipo" data-tipo="colgantes">Colgantes</button>
-        </div>
+  <div class="frase-categoria">
+    <img id="imagenCategoria" src="" alt="Imagen categoría" class="imagen-categoria">
+    <h3 id="fraseCategoria"></h3>
+  </div>
+
+  <div class="filtros-wrap">
+    <div class="bloque-filtros">
+      <p class="filtros-label">Temáticas</p>
+      <div class="categorias">
+        <button class="filtro active" data-categoria="todos">Todos</button>
+        <button class="filtro" data-categoria="conviccion">Convicción</button>
+        <button class="filtro" data-categoria="transformacion">Transformación</button>
+        <button class="filtro" data-categoria="origen">Origen</button>
       </div>
-    </aside>
+    </div>
+
+    <div class="bloque-filtros">
+      <p class="filtros-label">Clasificaciones</p>
+      <div class="tipos">
+        <button class="filtro-tipo active" data-tipo="todos">Quitar filtros</button>
+        <button class="filtro-tipo" data-tipo="aros">Aros</button>
+        <button class="filtro-tipo" data-tipo="anillos">Anillos</button>
+        <button class="filtro-tipo" data-tipo="colgantes">Colgantes</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="carrito carrito-lateral" id="carrito">
+    <h2>Tu carrito</h2>
+    <ul id="lista-carrito"></ul>
+
+    <p class="total">
+      Total: $<span id="total">0</span>
+    </p>
+
+    <div class="carrito-botones">
+      <button class="btn-secundario" onclick="seguirComprando()">
+        Agregar más productos
+      </button>
+
+      <button class="btn-principal" onclick="enviarWhatsApp()">
+        Finalizar por WhatsApp
+      </button>
+    </div>
+  </section>
+
+</aside>
 
     <!-- COLUMNA DERECHA -->
     <div class="productos-contenido">
@@ -237,26 +272,6 @@
   </div>
 </section>
 
-    <!-- CARRITO -->
-<section class="carrito" id="carrito">
-    <h2>Tu carrito</h2>
-
-    <ul id="lista-carrito"></ul>
-
-    <p class="total">
-        Total: $<span id="total">0</span>
-    </p>
-
-    <div class="carrito-botones">
-        <button class="btn-secundario" onclick="seguirComprando()">
-            Agregar más productos
-        </button>
-
-        <button class="btn-principal" onclick="enviarWhatsApp()">
-            Finalizar por WhatsApp
-        </button>
-    </div>
-</section>
 <!-- Perforaciones certificadas -->
         <section class="perforaciones" id="perforaciones">
 
