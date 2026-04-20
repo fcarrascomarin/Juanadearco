@@ -156,7 +156,6 @@ body {
   display: grid;
   grid-template-columns: 320px 1fr;
   gap: 48px;
-  align-items: start;
 }
 .productos-sidebar,
 .productos-contenido {
