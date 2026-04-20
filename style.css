@@ -157,10 +157,7 @@ body {
   grid-template-columns: 320px 1fr;
   gap: 48px;
 }
-.productos-sidebar,
-.productos-contenido {
-  align-self: start;
-}
+
 
 .productos-sidebar {
   position: sticky;
