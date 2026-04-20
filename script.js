@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
             frase: "Un simbolo para cada historia",
             imagen: "img/origen.jpg"
         }
-    });
+    );
 
     filtros.forEach(boton => {
         boton.addEventListener("click", () => {
