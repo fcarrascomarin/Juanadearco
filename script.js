@@ -137,26 +137,32 @@ document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".card");
     const frase = document.getElementById("fraseCategoria");
     const imagen = document.getElementById("imagenCategoria");
+    const descripcion = document.getElementById("descripcion");
 
     let categoriaActiva = "todos";
     let tipoActivo = "todos";
 
     const contenidoCategoria = {
         todos: {
-            frase: "Joyas que representan historias",
-            imagen: "todos.jpg"
+            frase: "Amuletos que cuentan historias",
+            imagen: "todos.jpg",
+            descripcion:"Juana de Arco no pidió permiso, eligió su voz...y el fuego la volvió eterna."
         },
         conviccion: {
             frase: "La fuerza que te sostiene",
-            imagen: "conviccion.jpg"
+            imagen: "conviccion.jpg",
+            descripcion:""
+            
         },
         transformacion: {
             frase: "El cambio que te define",
-            imagen: "transformacion.jpg"
+            imagen: "transformacion.jpg",
+            descripcion:""
         },
         origen: {
             frase: "Un símbolo para cada historia",
-            imagen: "origen.jpg"
+            imagen: "origen.jpg",
+            descripcion:""
         }
     };
 
