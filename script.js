@@ -119,12 +119,6 @@ function cambiarImagen(boton, direccion) {
     img.dataset.index = index;
 }
 
-function seguirComprando() {
-    const productos = document.getElementById("productos");
-    if (productos) {
-        productos.scrollIntoView({ behavior: "smooth" });
-    }
-}
 
 
 /* =========================
@@ -165,23 +159,21 @@ document.addEventListener("DOMContentLoaded", function () {
             descripcion:"Todo comienza en ese instante invisible donde decides",
         },
     };
+function actualizarContenidoCategoria() {
+    const contenido = contenidoCategoria[categoriaActiva];
 
-    function actualizarContenidoCategoria() {
-        const contenido = contenidoCategoria[categoriaActiva];
+    if (frase && imagen && descripcion && contenido) {
+        imagen.classList.remove("visible");
 
-        if (frase && imagen && contenido) {
-            frase.classList.remove("visible");
-            imagen.classList.remove("visible");
+        frase.textContent = contenido.frase;
+        imagen.src = contenido.imagen;
+        descripcion.textContent = contenido.descripcion;
 
-            frase.textContent = contenido.frase;
-            imagen.src = contenido.imagen;
-
-            setTimeout(() => {
-                frase.classList.add("visible");
-                imagen.classList.add("visible");
-            }, 100);
-        }
+        setTimeout(() => {
+            imagen.classList.add("visible");
+        }, 100);
     }
+}
 
     function aplicarFiltros() {
         cards.forEach(card => {
