@@ -549,6 +549,7 @@ body {
     padding: 60px 10%;
     background: #eee;
     flex-wrap: wrap;
+    border-bottom: 1px solid #ad8728;
 }
 
    .col-izq {
