@@ -466,6 +466,7 @@ body {
   font-weight: 700;
   color: #ad8728;
   margin: 0;
+  align-items: center;
 }
 
 .card .btn-principal {
