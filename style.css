@@ -449,6 +449,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
 }
 
 .card:hover {
@@ -460,14 +461,14 @@ body {
   font-weight: 600;
   color: #1f1f1f;
   margin: 0;
-  align-items: center;
+ 
 }
 
 .precio {
   font-weight: 700;
   color: #ad8728;
   margin: 0;
-  align-items: center;
+  
 }
 
 .card .btn-principal {
