@@ -376,7 +376,34 @@ body {
   flex-wrap: wrap;
   gap: 10px 12px;
 }
+.tipos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 28px;
+  align-items: center;
+}
 
+.filtro-tipo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  color: #4d4d4d;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 8px 2px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s ease;
+}
+
+.icono-tipo {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: block;
+}
 .filtro,
 .filtro-tipo {
   background: transparent;
@@ -751,6 +778,20 @@ footer {
 .grid {
   grid-template-columns: repeat(2, minmax(140px, 1fr));
   gap: 20px;
+}
+.tipos {
+  gap: 14px 18px;
+  justify-content: center;
+}
+
+.filtro-tipo {
+  gap: 8px;
+  font-size: 13px;
+}
+
+.icono-tipo {
+  width: 16px;
+  height: 16px;
 }
 
     /* ================= PERFORACIONES ================= */
