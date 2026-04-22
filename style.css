@@ -292,7 +292,9 @@ body {
   grid-template-columns: 320px 1fr;
   gap: 48px;
 }
-
+.productos .tipos{
+  display: inline;
+}
 
 .productos-sidebar {
   position: sticky;
