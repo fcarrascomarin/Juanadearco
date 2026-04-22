@@ -151,18 +151,18 @@ document.addEventListener("DOMContentLoaded", function () {
         conviccion: {
             frase: "La fuerza que te sostiene",
             imagen: "conviccion.jpg",
-            descripcion:"",
+            descripcion:"Cuando el mundo duda,queda lo único que no se negocia: tu verdad.",
             
         },
         transformacion: {
             frase: "El cambio que te define",
             imagen: "transformacion.jpg",
-            descripcion:"",
+            descripcion:"Transformarse no es perderse, es ser más fiel nunca a ti",
         },
         origen: {
             frase: "Un símbolo para cada historia",
             imagen: "origen.jpg",
-            descripcion:"",
+            descripcion:"Todo comienza en ese instante invisible donde decides",
         }
     };
 
