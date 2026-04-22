@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         conviccion: {
             frase: "La fuerza que te sostiene",
-            imagen: "cat-conviccion.png",
+            imagen: "./cat-conviccion.png",
             descripcion:"Cuando el mundo duda,queda lo único que no se negocia: tu verdad.",
             
         },
