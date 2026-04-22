@@ -302,6 +302,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  background: #eee;
 }
 .catalogo-header {
   display: flex;
