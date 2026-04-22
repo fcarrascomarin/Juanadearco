@@ -303,7 +303,7 @@ body {
   gap: 24px;
   background: #eee;
 }
-.catalogo-header {
+.descripcion {
   display: flex;
   flex-direction: column;
   gap: 10px;
