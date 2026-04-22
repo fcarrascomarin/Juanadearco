@@ -446,6 +446,7 @@ body {
   background: #f4f4f4;
   box-shadow: 0 8px 18px rgba(0,0,0,0.04);
   transition: all 0.25s ease;
+  border: 1px solid rgba(0,0,0,0.05);
 
   display: flex;
   flex-direction: column;
@@ -457,7 +458,8 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-4px);
+    transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
 }
 
 /* CONTENEDOR DE IMAGEN */
