@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
             frase: "Un símbolo para cada historia",
             imagen: "origen.jpg",
             descripcion:"Todo comienza en ese instante invisible donde decides",
-        }
+        },
     };
 
     function actualizarContenidoCategoria() {
