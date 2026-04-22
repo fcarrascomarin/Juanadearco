@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const contenidoCategoria = {
         todos: {
             frase: "Amuletos que cuentan historias",
-            imagen: "cat-todos1.png",
+            imagen: "cat-todos.png",
             descripcion:"Juana de Arco no pidió permiso, eligió su voz y el fuego la volvió eterna.",
         },
         conviccion: {
