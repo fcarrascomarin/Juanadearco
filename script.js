@@ -146,23 +146,23 @@ document.addEventListener("DOMContentLoaded", function () {
         todos: {
             frase: "Amuletos que cuentan historias",
             imagen: "todos.jpg",
-            descripcion:"Juana de Arco no pidió permiso, eligió su voz...y el fuego la volvió eterna."
+            descripcion:"Juana de Arco no pidió permiso, eligió su voz...y el fuego la volvió eterna.",
         },
         conviccion: {
             frase: "La fuerza que te sostiene",
             imagen: "conviccion.jpg",
-            descripcion:""
+            descripcion:"",
             
         },
         transformacion: {
             frase: "El cambio que te define",
             imagen: "transformacion.jpg",
-            descripcion:""
+            descripcion:"",
         },
         origen: {
             frase: "Un símbolo para cada historia",
             imagen: "origen.jpg",
-            descripcion:""
+            descripcion:"",
         }
     };
 
