@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
         todos: {
             frase: "Amuletos que cuentan historias",
             imagen: "cat-todos1.png",
-            descripcion:"Juana de Arco no pidió permiso, eligió su voz...y el fuego la volvió eterna.",
+            descripcion:"Juana de Arco no pidió permiso, eligió su voz y el fuego la volvió eterna.",
         },
         conviccion: {
             frase: "La fuerza que te sostiene",
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
         transformacion: {
             frase: "El cambio que te define",
             imagen: "cat-transformacion.png",
-            descripcion:"Transformarse no es perderse, es ser más fiel nunca a ti",
+            descripcion:"Transformarse no es perderse, es ser más fiel que nunca a ti",
         },
         origen: {
             frase: "Un símbolo para cada historia",
