@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".card");
     const frase = document.getElementById("fraseCategoria");
     const imagen = document.getElementById("imagenCategoria");
-    const descripcion = document.getElementById("descripcion");
+    const descripcion = document.getElementById("descripcionCategoria");
 
     let categoriaActiva = "todos";
     let tipoActivo = "todos";
