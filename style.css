@@ -917,45 +917,127 @@ footer {
   height: 16px;
 }
 
-    /* ================= PERFORACIONES ================= */
-    .perforaciones {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-        padding: 60px 5%;
-        }
+    /* =========================
+   PERFORACIONES
+========================= */
+.perforaciones {
+    display: grid;
+    grid-template-columns: minmax(320px, 520px) minmax(320px, 1fr);
+    align-items: center;
+    gap: 60px;
+    padding: 80px 8%;
+    background: #eeeeee;
+    border-bottom: 1px solid #ad8728;
+}
 
-    .perforaciones img {
-        width: 220px;
-        height: auto;
-    }
+.perforaciones > img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    display: block;
+    justify-self: center;
+    border-radius: 10px;
+}
 
-    .col-izq img {
-        width: 200px;
-    }
+.col-izq {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    max-width: 520px;
+}
 
-    .garantias {
-        align-items: center;
-    }
+.col-izq img {
+    width: 180px;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
 
-    .redes-perforaciones {
-        align-items: center;
-    }
+#agendar {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    width: 100%;
+}
 
-    #agendar {
-        align-items: center;
-    }
+#agendar p {
+    margin: 0;
+    font-size: 26px;
+    color: #1f1f1f;
+}
 
-    .dias {
-        flex-direction: column;
-        width: 100%;
-        gap: 15px;
-    }
+.garantias {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 10px 0 6px;
+    align-items: start;
+    width: 100%;
+}
 
-    .dias button {
-        width: 100%;
-        max-width: 280px;
-    }
+.garantias div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4d4d4d;
+    line-height: 1.4;
+}
+
+.redes-perforaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 18px;
+    width: 100%;
+}
+
+.redes-perforaciones a {
+    text-decoration: none;
+    color: #ad8728;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.redes-perforaciones a:hover {
+    opacity: 0.6;
+}
+
+.dias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+}
+
+.dias button {
+    padding: 12px 20px;
+    border: 1px solid #ad8728;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+    min-width: 130px;
+}
+
+.dias button:hover {
+    background-color: #ad8728;
+}
+
+.mensaje-agenda a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
 
 
 
