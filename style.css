@@ -446,15 +446,20 @@ body {
   padding: 20px 16px;
   background: #f4f4f4;
   box-shadow: 0 8px 18px rgba(0,0,0,0.04);
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   height: 100%;
   max-width: 260px;
+  width: 100%;
   margin: 0 auto;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
 .card-top {
   display: flex;
   flex-direction: column;
@@ -468,101 +473,54 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  margin-top: 10px;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+  margin-top: 12px;
 }
 .producto-img {
   width: 100%;
   max-width: 200px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
-
   background: #fff;
   padding: 12px;
   border-radius: 12px;
+  margin-bottom: 14px;
 }
+
 .card-title {
   font-size: 16px;
   font-weight: 600;
-  min-height: 40px; /* 🔥 alinea títulos */
+  color: #2a2a2a;
+  min-height: 48px;
+  margin: 0;
 }
 
 .descripcion {
   font-size: 14px;
   color: #6a665d;
   line-height: 1.5;
-  min-height: 70px; /* 🔥 clave para igualar cards */
+  min-height: 88px;
+  max-width: 220px;
+  margin: 0;
 }
 .precio {
   font-size: 18px;
   font-weight: 700;
   color: #ad8728;
+  margin: 0;
 }
 
 .diametro {
   font-size: 13px;
   color: #8a857c;
+  margin: 0;
 }
+
 .card .btn-principal {
   width: 100%;
   max-width: 180px;
   padding: 12px;
   margin-top: 6px;
 }
-/* CONTENEDOR DE IMAGEN */
-.card img,
-.producto-img {
-  width: 100%;
-  max-width: 200px; /* 🔥 clave: nunca más grande que columna izquierda */
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
-
-  border-radius: 12px;
-  background: #fff;
-  padding: 12px;
-
-  margin-bottom: 14px;
-}
-
-/* TITULO */
-.card-title {
-  font-size: 16px;
-  font-weight: 600;
-  color: #2a2a2a;
-  margin-bottom: 8px;
-}
-
-/* DESCRIPCION */
-.card p:not(.precio):not(.card-title) {
-  font-size: 14px;
-  color: #6a665d;
-  line-height: 1.5;
-  margin-bottom: 12px;
-  max-width: 220px;
-}
-
-/* PRECIO */
-.precio {
-  font-size: 18px;
-  font-weight: 700;
-  color: #ad8728;
-  margin-bottom: 12px;
-}
-
-/* BOTON */
-.card .btn-principal {
-  width: 100%;
-  max-width: 180px;
-  padding: 12px;
-}
-
- 
-  
-
 
 
 .slider {
@@ -874,8 +832,8 @@ footer {
 }
 
 .icono-tipo {
-  width: 32px;
-  height: 32px;
+  width: 16px;
+  height: 16px;
 }
 
     /* ================= PERFORACIONES ================= */
