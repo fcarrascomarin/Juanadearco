@@ -328,24 +328,27 @@ body {
 ========================= */
 
 .productos {
-  padding: 70px 6%;
+  padding: 80px 0;
 }
 
+/* 🔥 CONTENEDOR CENTRAL (CLAVE) */
 .productos-layout {
     display: grid;
-    grid-template-columns: 300px minmax(0, 1fr);
-    gap: 40px;
-    align-items: start;
+    grid-template-columns: 280px 1fr;
+    gap: 50px;
+
+    max-width: 1200px; /* 🔥 esto arregla todo */
+    margin: 0 auto;     /* 🔥 centra el bloque */
+    padding: 0 5%;
 }
 
 
 .productos-sidebar {
-    grid-column: 1;
     width: 100%;
 }
 .productos-contenido {
-    grid-column: 2;
-      width: 100%;
+   width: 100%;
+    min-width: 0;
 }
 .filtros-wrap {
   display: flex;
@@ -478,8 +481,7 @@ body {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(230px, 1fr));
-    gap: 36px;
-    align-items: stretch;
+    gap: 30px;
 }
 
 .card {
