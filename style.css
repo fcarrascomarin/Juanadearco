@@ -523,7 +523,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  margin-top: 12px;
+  margin-top: auto;
 }
 .producto-img {
   width: 100%;
@@ -850,6 +850,11 @@ footer {
 .productos-sidebar {
   position: static;
   padding: 22px 18px;
+}
+
+.productos-sidebar,
+.productos-contenido {
+    grid-column: auto;
 }
 
 .frase-categoria {
