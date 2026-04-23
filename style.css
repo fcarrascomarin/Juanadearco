@@ -219,41 +219,66 @@ body {
 ========================= */
 
 .inicio {
-  padding: 120px 10%;
+  padding: 120px 8%;
   background-color: #f8f6f3;
 }
 
 .inicio-contenido {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
   align-items: center;
-  justify-content: center;
-  gap: 90px;
+  gap: 80px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 /* IMAGEN */
 
 .inicio-imagen img {
-  width: 520px;
-  max-width: 100%;
-  border-radius: 4px;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+  display: block;
 }
 
 /* TEXTO */
 
 .inicio-texto {
-  max-width: 420px;
+  max-width: 520px;
   color: #a67c2e;
 }
 
-/* FRASE */
+/* FRASE SUPERIOR */
+
+.hero-eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8e8a80;
+  margin-bottom: 18px;
+}
+
+
+/* TITULO PRINCIPAL */
 
 .inicio-texto h1 {
-  font-size: 30px;
+  font-size: 52px;
   font-weight: 400;
-  line-height: 1.6;
-  margin-bottom: 45px;
+  line-height: 1.1;
+  margin-bottom: 20px;
   letter-spacing: 1px;
-  font-family: "permanent marker";
+  font-family: "Permanent Marker", cursive;
+  color: #ad8728;
+}
+
+/* BAJADA */
+
+.hero-bajada {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #5f5a52;
+  max-width: 480px;
+  margin-bottom: 34px;
 }
 
 /* BOTON */
@@ -263,11 +288,31 @@ body {
   padding: 14px 36px;
   border: 1px solid #a67c2e;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
   color: #a67c2e;
   background: transparent;
   transition: all 0.35s ease;
+}
+.inicio-texto a:hover {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+/* VALORES */
+
+.hero-valores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-top: 28px;
+}
+
+.hero-valores span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8e8a80;
 }
 
 /* EFECTO HOVER ELEGANTE */
@@ -757,26 +802,36 @@ footer {
         }
 
     /* ================= INICIO ================= */
-    .inicio {
-        padding: 60px 5%;
-    }
+   .inicio {
+    padding: 70px 5%;
+  }
 
-    .inicio-contenido {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
+  .inicio-contenido {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
 
-    .inicio-imagen img {
-        max-width: 240px;
-        width: 100%;
-    }
+  .inicio-imagen img {
+    max-width: 100%;
+  }
 
-    .inicio-texto p {
-        max-width: 100%;
-        font-size: 16px;
-    }
+  .inicio-texto {
+    max-width: 100%;
+  }
 
+  .inicio-texto h1 {
+    font-size: 36px;
+  }
+
+  .hero-bajada {
+    font-size: 16px;
+  }
+
+  .hero-valores {
+    justify-content: center;
+  }
+}
     /* ================= PRODUCTOS ================= */
 .productos {
   padding: 50px 5%;
