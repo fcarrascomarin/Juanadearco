@@ -899,6 +899,14 @@ footer {
 .card-top {
     flex: 1;
 }
+.card-bottom {
+    margin-top: auto;
+}
+
+.descripcion {
+    min-height: 84px;
+}
+
 .tipos {
   gap: 14px 18px;
   justify-content: center;
