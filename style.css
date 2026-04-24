@@ -613,7 +613,6 @@ body {
     width: 100%;
     max-width: 520px;
     height: auto;
-    display: block;
     justify-self: center;
     border-radius: 10px;
 }
