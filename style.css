@@ -602,7 +602,7 @@ body {
 .perforaciones {
     display: grid;
     grid-template-columns: minmax(320px, 520px) minmax(320px, 1fr);
-    align-items: center;
+   
     gap: 60px;
     padding: 80px 8%;
     background: #eeeeee;
