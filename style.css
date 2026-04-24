@@ -511,7 +511,7 @@ body {
   flex: 1;
 }
 
-.card-bottom {
+.card-botom {
   display: flex;
   flex-direction: column;
   align-items: center;
