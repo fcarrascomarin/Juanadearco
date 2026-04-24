@@ -865,10 +865,11 @@ footer {
   .hero-valores {
     justify-content: center;
   }
-}
+
     /* ================= PRODUCTOS ================= */
 .productos {
-  padding: 50px 5%;
+  padding: 80px 5%;
+  
 }
 
 .productos-layout {
@@ -1009,6 +1010,6 @@ footer {
 }
 
 
-
+}
 
 
