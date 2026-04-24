@@ -601,8 +601,6 @@ body {
 ========================= */
 .perforaciones {
     display: grid;
-    grid-template-columns: minmax(320px, 520px) minmax(320px, 1fr);
-   
     gap: 60px;
     padding: 80px 8%;
     background: #eeeeee;
