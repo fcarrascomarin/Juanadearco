@@ -632,6 +632,9 @@ body {
     margin-top: 0;
     margin-bottom: 18px;
 }
+#perforaciones img .col-izq .dias {
+  display: inline-flex;
+}
 
 #agendar {
     display: flex;
@@ -966,9 +969,7 @@ footer {
     width: 180px;
     margin-bottom: 18px;
 }
-#perforaciones img .col-izq .dias {
-  display: inline-flex;
-}
+
 
 #agendar {
     align-items: center;
