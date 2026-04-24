@@ -328,19 +328,28 @@ body {
 ========================= */
 
 .productos {
-  padding: 80px 0;
+  padding: 80px 5%;
 }
 
 .productos-layout {
-  display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
-  gap: 40px;
-  align-items: start;
+  display: grid !important;
+  grid-template-columns: 300px minmax(0, 1fr) !important;
+  gap: 40px !important;
+  align-items: start !important;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .productos-sidebar {
-  grid-column: 1;
+  grid-column: 1 !important;
   width: 100%;
+  align-self: start;
+}
+.productos-contenido .grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(200px, 1fr)) !important;
+  gap: 32px !important;
+  align-items: stretch;
 }
 
 .productos-contenido {
@@ -863,20 +872,22 @@ footer {
 }
 
 .productos-layout {
-  grid-template-columns: 1fr;
-  gap: 30px;
-}
+    grid-template-columns: 1fr !important;
+  }
 
 .productos-sidebar {
   position: static;
   padding: 22px 18px;
 }
 
-.productos-sidebar,
-.productos-contenido {
-    grid-column: auto;
-}
-
+  .productos-sidebar,
+  .productos-contenido {
+    grid-column: auto !important;
+  }
+  .productos-contenido .grid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr)) !important;
+    gap: 20px !important;
+  }
 .frase-categoria {
   align-items: center;
   text-align: center;
