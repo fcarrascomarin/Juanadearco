@@ -16,7 +16,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f8f5ef;
-    background: linear-gradient(#ad8728);
     color: #ad8728;
 }
 
@@ -37,7 +36,7 @@ body {
     max-width: 1000px;
     margin: auto;
     padding: 0 5%; /* Reduje el padding lateral del 10% al 5% */
-    height: 40px;   /* Cambié de 100px a 60px */
+    height: 90px;   /* Cambié de 100px a 60px */
     display: flex;
     align-items: center;
     justify-content: space-between;
