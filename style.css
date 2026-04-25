@@ -819,17 +819,26 @@ footer {
 
     /* ================= NAV ================= */
     .nav-container {
-        height: 75px;
-        padding: 0 5%;
+         height: 72px;
+        padding: 0 18px;
+        display: grid;
+        grid-template-columns: 48px 1fr 48px;
+        align-items: center;
+        max-width: 100%;
     }
 
-    .logo img {
-        height: 50px;
-    }
+      .logo {
+    justify-self: start;
+  }
+
+  .logo img {
+    height: 44px;
+    width: auto;
+  }
 
     .nav-menu {
         position: absolute;
-        top: 75px;
+        top: 72px;
         right: 0;
         background: white;
         width: 100%;
@@ -840,16 +849,34 @@ footer {
         display: none;
         border-top: 1px solid #f7f1e8;
     }
+      .cart-toggle {
+          width: 44px;
+          height: 44px;
+        }
 
+        .cart-count {
+          top: -7px;
+          right: -7px;
+        }
+
+        
     .nav-menu.active {
         display: flex;
     }
 
     .menu-toggle {
-        display: block;
+        display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    font-size: 28px;
+    color: #ad8728;
     }
     .header-actions {
-        margin-left: auto;
+        justify-self: end;
+    margin-left: 0;
         }
 
         .cart-dropdown {
