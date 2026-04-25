@@ -609,122 +609,100 @@ body {
    PERFORACIONES
 ========================= */
 .perforaciones {
-    display: grid;
-    gap: 60px;
-    padding: 80px 8%;
-    background: #eeeeee;
-    border-bottom: 1px solid #ad8728;
+  background: #eeeeee;
+  padding: 90px 5%;
+  border-bottom: 1px solid #ad8728;
+}
+
+.perforaciones-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 0;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
 }
 
 .perforaciones > img {
-    width: 100%;
-    max-width: 520px;
-    height: auto;
-    justify-self: center;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  object-fit: cover;
+  display: block;
 }
 
 .col-izq {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    max-width: 520px;
+  padding: 52px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: #fff;
 }
 
-#perforaciones img {
-    width: 180px;
-    max-width: 100%;
-    margin-top: 0;
-    margin-bottom: 18px;
-}
-
-#perforaciones img .col-izq{
-  display: inline-flex;
-}
-
-#agendar {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    align-items: flex-start;
-    width: 100%;
+.col-izq img {
+  width: 120px;
+  margin-bottom: 22px;
 }
 
 #agendar p {
-    margin: 0;
-    font-size: 26px;
-    color: #1f1f1f;
+  font-size: 28px;
+  line-height: 1.1;
+  color: #1f1f1f;
+  margin-bottom: 18px;
 }
 
 .garantias {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-    margin: 10px 0 6px;
-    align-items: start;
-    width: 100%;
+  display: grid;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
 .garantias div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #4d4d4d;
-    line-height: 1.4;
-}
-
-.redes-perforaciones {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    margin-top: 18px;
-    width: 100%;
-}
-
-.redes-perforaciones a {
-    text-decoration: none;
-    color: #ad8728;
-    font-weight: 800;
-    transition: 0.3s;
-}
-
-.redes-perforaciones a:hover {
-    opacity: 0.6;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4d4d4d;
+  font-size: 15px;
 }
 
 .dias {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
 .dias button {
-    padding: 12px 20px;
-    border: 1px solid #ad8728;
-    background-color: #000;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: 0.3s;
-    min-width: 130px;
+  padding: 12px 18px;
+  min-width: 110px;
+  border: 1px solid #ad8728;
+  background: #000;
+  color: #fff;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.25s ease;
 }
 
 .dias button:hover {
-    background-color: #ad8728;
+  background: #ad8728;
 }
 
-.mensaje-agenda a {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 18px;
-    background-color: #000;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
+.redes-perforaciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.redes-perforaciones a {
+  text-decoration: none;
+  color: #ad8728;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 /* =========================
