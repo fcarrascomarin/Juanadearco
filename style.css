@@ -627,7 +627,7 @@ body {
 .perforaciones-card {
   max-width: 1000px;
   grid-template-columns: 0.9fr 420px;
-  justify-self:center;
+  
 }
 
 .perforaciones-card > img {
