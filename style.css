@@ -37,7 +37,7 @@ body {
     max-width: 1000px;
     margin: auto;
     padding: 0 5%; /* Reduje el padding lateral del 10% al 5% */
-    height: 100px;   /* Cambié de 100px a 60px */
+    height: 80px;   /* Cambié de 100px a 60px */
     display: flex;
     align-items: center;
     justify-content: space-between;
