@@ -342,7 +342,8 @@ body {
 
 .productos-sidebar {
   grid-column: 1 !important;
-  width: 100%;
+  position: sticky;
+  top: 120px;
   align-self: start;
 }
 .productos-contenido .grid {
@@ -351,7 +352,14 @@ body {
   gap: 32px !important;
   align-items: stretch;
 }
-
+  .productos-contenido .bloque-filtros {
+    align-items: flex-start;
+    margin-bottom: 28px;
+  }
+  .categorias,
+  .tipos {
+    justify-content: flex-start !important;
+  }
 .productos-contenido {
   grid-column: 2;
   width: 100%;
@@ -609,9 +617,12 @@ body {
    PERFORACIONES
 ========================= */
 .perforaciones {
-  background: #eeeeee;
-  padding: 90px 5%;
-  border-bottom: 1px solid #ad8728;
+    background: #eeeeee;
+    display: grid !important;
+    grid-template-columns: minmax(320px, 520px) minmax(320px, 1fr) !important;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 8%;
 }
 
 .perforaciones-card {
@@ -910,6 +921,7 @@ footer {
 }
 .card-botom {
     margin-top: auto;
+    width: 100%;
 }
 
 .descripcion {
