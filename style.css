@@ -618,87 +618,101 @@ body {
 /* =========================
    PERFORACIONES
 ========================= */
+
 .perforaciones {
-  padding: 80px 8%;
-  border-bottom: 1px solid #ad8728;
-  
+  background: #f4efe7;
+  padding: 90px 5%;
 }
 
 .perforaciones-card {
-  max-width: 1000px;
-  grid-template-columns: 0.9fr 420px;
-  
+  max-width: 1080px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 28px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+  border: 1px solid rgba(173,135,40,0.18);
 }
 
-.perforaciones-card > img {
+.perforaciones-imagen {
+  min-height: 420px;
+  background: #eee;
+}
+
+.perforaciones-imagen img {
   width: 100%;
   height: 100%;
-  min-height: 380px;
   max-height: 460px;
   object-fit: cover;
   object-position: center;
+  display: block;
 }
 
-.col-izq > img {
-  width: 170px;
-  margin-bottom: 28px;
-}
-.col-izq {
-  padding: 48px 38px;
+.perforaciones-info {
+  padding: 52px 54px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #fff;
+  align-items: flex-start;
+  text-align: left;
 }
 
-
-
-#agendar {
-  width: 100%;
+.care-logo {
+  width: 170px;
+  margin-bottom: 22px;
 }
 
-#agendar p {
-  font-size: 26px;
-  line-height: 1.15;
+.perforaciones-etiqueta {
+  color: #ad8728;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin: 0 0 10px;
+}
+
+.perforaciones-info h2 {
   color: #1f1f1f;
-  margin-bottom: 20px;
+  font-size: 34px;
+  line-height: 1.1;
+  margin: 0 0 24px;
 }
 
 .garantias {
   display: grid;
-  gap: 14px;
+  gap: 12px;
   margin-bottom: 28px;
 }
 
 .garantias div {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 9px;
+  gap: 10px;
   color: #4d4d4d;
-  font-size: 15px;
-  line-height: 1.35;
+  font-size: 16px;
+}
+
+.garantias i {
+  color: #ad8728;
 }
 
 .dias {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 .dias button {
-  padding: 12px 20px;
-  min-width: 110px;
+  padding: 13px 24px;
+  min-width: 118px;
   border: 1px solid #ad8728;
   background: #000;
   color: #fff;
   border-radius: 999px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 15px;
   transition: 0.25s ease;
 }
 
@@ -709,9 +723,7 @@ body {
 .redes-perforaciones {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin-top: 8px;
+  gap: 9px;
 }
 
 .redes-perforaciones a {
@@ -719,6 +731,7 @@ body {
   color: #ad8728;
   font-weight: 700;
   font-size: 14px;
+  cursor: pointer;
 }
 
 /* =========================
@@ -955,35 +968,48 @@ footer {
 }
 
     /* ================= PERFORACIONES ================= */
-.perforaciones {
-    padding: 80px 5%;
+ .perforaciones {
+    padding: 60px 5%;
   }
 
   .perforaciones-card {
     grid-template-columns: 1fr;
     max-width: 430px;
+    border-radius: 22px;
   }
 
-  .perforaciones-card > img {
-    min-height: 260px;
-    max-height: 320px;
+  .perforaciones-imagen {
+    min-height: 230px;
+  }
+
+  .perforaciones-imagen img {
+    height: 260px;
+    max-height: 260px;
     object-fit: cover;
   }
 
-  .col-izq {
-    padding: 34px 22px;
+  .perforaciones-info {
+    padding: 34px 24px;
+    align-items: center;
+    text-align: center;
   }
 
-  .col-izq > img {
-    width: 115px;
+  .care-logo {
+    width: 145px;
   }
 
-  #agendar p {
-    font-size: 22px;
+  .perforaciones-info h2 {
+    font-size: 26px;
+  }
+
+  .garantias div {
+    justify-content: center;
+    font-size: 15px;
   }
 
   .dias {
     flex-direction: column;
+    width: 100%;
     align-items: center;
   }
 
@@ -992,6 +1018,9 @@ footer {
     max-width: 260px;
   }
 
+  .redes-perforaciones {
+    align-items: center;
+  }
 }
 
 
