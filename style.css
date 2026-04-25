@@ -52,7 +52,7 @@ body {
 /* MENU DESKTOP */
 .nav-menu {
     display: flex;
-    gap: 50px;
+    gap: 80px;
 }
 
 .nav-menu a {
