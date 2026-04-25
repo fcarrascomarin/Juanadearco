@@ -1002,7 +1002,7 @@ footer {
   }
 
   .care-logo {
-    width: 160px;
+    width: 145px;
   }
 
   .perforaciones-info h2 {
@@ -1012,9 +1012,7 @@ footer {
   .garantias div {
     justify-content: center;
     font-size: 15px;
-    display: grid;
-    gap: 14px;
-    margin-bottom: 30px;
+    padding: 34px
   }
 
   .dias {
