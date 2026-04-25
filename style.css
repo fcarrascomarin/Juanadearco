@@ -853,6 +853,9 @@ footer {
   .inicio-texto h1 {
     font-size: 36px;
   }
+  .inicio-texto a {
+    justify-content: center;
+  }
 
   .hero-bajada {
     font-size: 16px;
