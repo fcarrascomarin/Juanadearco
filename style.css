@@ -981,7 +981,7 @@ footer {
 
   .perforaciones-card {
     grid-template-columns: 1fr;
-    max-width: 430px;
+    max-width: 400px;
     border-radius: 22px;
   }
 
