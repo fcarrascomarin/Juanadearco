@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         templanza: {
             frase: "No respondió al caos con más caos.Respondió con templanza.",
-            imagen: "cat-origen.png",
+            imagen: "cat-templanza.png",
             descripcion:"La calma también puede ser una forma de fuego.",
         },
     };
