@@ -153,8 +153,8 @@ document.addEventListener("DOMContentLoaded", function () {
             imagen: "cat-transformacion.png",
             descripcion:"Transformarse no es perderse, es ser más fiel que nunca a ti",
         },
-        origen: {
-            frase: "Un símbolo para cada historia",
+        templanza: {
+            frase: "No respondió al caos con más caos.Respondió con templanza.",
             imagen: "cat-origen.png",
             descripcion:"Todo comienza en ese instante invisible donde decides",
         },
