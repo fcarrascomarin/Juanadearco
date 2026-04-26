@@ -346,8 +346,8 @@ body {
   position: sticky;
   top: 120px;
   align-self: start;
-  width: 300px;
-  max-width: 300px;
+  width: 320px;
+  max-width: 320px;
   min-width: 0;
   overflow: hidden;
 }
@@ -424,7 +424,7 @@ body {
 .filtros-label {
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: #8e8a80;
   margin: 0;
 }
