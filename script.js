@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         templanza: {
             frase: "No respondió al caos con más caos.Respondió con templanza.",
             imagen: "cat-origen.png",
-            descripcion:"Todo comienza en ese instante invisible donde decides",
+            descripcion:"La calma también puede ser una forma de fuego.",
         },
     };
 function actualizarContenidoCategoria() {
