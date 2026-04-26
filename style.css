@@ -351,6 +351,30 @@ body {
   min-width: 0;
   overflow: hidden;
 }
+.limpiar-filtros {
+  align-self: center;
+  margin-top: 4px;
+  background: transparent;
+  border: none;
+  color: #8e8a80;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  opacity: 0.75;
+  transition: 0.25s ease;
+}
+
+.limpiar-filtros:hover {
+  color: #ad8728;
+  opacity: 1;
+}
+
+.limpiar-filtros.oculto {
+  visibility: hidden;
+  pointer-events: none;
+}
 .productos-sidebar .categorias {
   display: flex;
   flex-direction: column;
@@ -481,6 +505,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  min-height: 50px;
 }
 
 .icono-tipo {
