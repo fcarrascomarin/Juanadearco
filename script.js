@@ -138,23 +138,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const contenidoCategoria = {
         todos: {
-            frase: "Amuletos que cuentan historias",
+            frase: "Cada símbolo guarda una historia",
             imagen: "cat-todos.png",
             descripcion:"Juana de Arco no pidió permiso, eligió su voz y el fuego la volvió eterna.",
         },
         conviccion: {
-            frase: "La fuerza que te sostiene",
+            frase: "La fuerza de quien conoce su camino",
             imagen: "cat-conviccion.png",
             descripcion:"Cuando el mundo duda,queda lo único que no se negocia: tu verdad.",
             
         },
         transformacion: {
-            frase: "El cambio que te define",
+            frase: "Todo cambio deja una nueva forma de brillar",
             imagen: "cat-transformacion.png",
             descripcion:"Transformarse no es perderse, es ser más fiel que nunca a ti",
         },
         templanza: {
-            frase: "No respondió al caos con más caos.Respondió con templanza.",
+            frase: "La calma también puede ser fuego",
             imagen: "cat-templanza.png",
             descripcion:"La calma también puede ser una forma de fuego.",
         },
