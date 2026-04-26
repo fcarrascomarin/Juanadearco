@@ -8,13 +8,37 @@ let total = 0;
 function agregarAlCarrito(nombre, precio) {
     carrito.push({ nombre, precio });
     total += precio;
+
     actualizarCarrito();
 
-    const carritoEl = document.getElementById("carrito");
-    if (carritoEl) {
-        carritoEl.scrollIntoView({ behavior: "smooth" });
+    // abrir carrito automáticamente
+    const cartDropdown = document.getElementById("cartDropdown");
+    if (cartDropdown) {
+        cartDropdown.classList.add("open");
     }
+
+    mostrarMensajeCarrito(`${nombre} agregado al carrito ✨`);
 }
+function mostrarMensajeCarrito(texto) {
+    let toast = document.getElementById("toastCarrito");
+
+    // si no existe, lo crea
+    if (!toast) {
+        toast = document.createElement("div");
+        toast.id = "toastCarrito";
+        toast.className = "toast-carrito";
+        document.body.appendChild(toast);
+    }
+
+    toast.textContent = texto;
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 2500);
+}
+
+
 
 function actualizarCarrito() {
     const lista = document.getElementById("lista-carrito");

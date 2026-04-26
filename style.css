@@ -655,7 +655,31 @@ body {
 .next {
   right: 5px;
 }
+/* =========================
+   TOAST CARRITO
+========================= */
 
+.toast-carrito {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #1f1f1f;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-size: 14px;
+  z-index: 5000;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.toast-carrito.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* =========================
    PERFORACIONES
 ========================= */
