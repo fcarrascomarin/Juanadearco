@@ -563,8 +563,8 @@ body {
 }
 
 .card-title {
-  font-size: 16px;
-  font-weight: 600;
+ font-weight:700;
+ font-size:17px;
   color: #2a2a2a;
   min-height: 48px;
   margin: 0;
