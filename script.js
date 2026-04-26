@@ -128,6 +128,9 @@ function cambiarImagen(boton, direccion) {
 document.addEventListener("DOMContentLoaded", function () {
     const filtrosCategoria = document.querySelectorAll(".filtro");
     const filtrosTipo = document.querySelectorAll(".filtro-tipo");
+    const limpiarCategoria = document.querySelector(".limpiar-categoria");
+    const limpiarTipo = document.querySelector(".limpiar-tipo");
+
     const cards = document.querySelectorAll(".card");
     const frase = document.getElementById("fraseCategoria");
     const imagen = document.getElementById("imagenCategoria");
@@ -140,40 +143,47 @@ document.addEventListener("DOMContentLoaded", function () {
         todos: {
             frase: "Cada símbolo guarda una historia",
             imagen: "cat-todos.png",
-            descripcion:"Juana de Arco no pidió permiso, eligió su voz y el fuego la volvió eterna.",
+            descripcion: "Juana de Arco no pidió permiso: eligió su voz y el fuego la volvió eterna."
         },
         conviccion: {
             frase: "La fuerza de quien conoce su camino",
             imagen: "cat-conviccion.png",
-            descripcion:"Cuando el mundo duda,queda lo único que no se negocia: tu verdad.",
-            
+            descripcion: "Cuando el mundo duda, queda lo único que no se negocia: tu verdad."
         },
         transformacion: {
             frase: "Todo cambio deja una nueva forma de brillar",
             imagen: "cat-transformacion.png",
-            descripcion:"Transformarse no es perderse, es ser más fiel que nunca a ti",
+            descripcion: "Transformarse no es perderse: es ser más fiel que nunca a ti."
         },
         templanza: {
             frase: "La calma también puede ser fuego",
             imagen: "cat-templanza.png",
-            descripcion:"La calma también puede ser una forma de fuego.",
-        },
+            descripcion: "Templanza no es quietud: es sostener tu centro incluso en medio del ruido."
+        }
     };
-function actualizarContenidoCategoria() {
-    const contenido = contenidoCategoria[categoriaActiva];
 
-    if (frase && imagen && descripcion && contenido) {
-        imagen.classList.remove("visible");
+    function actualizarContenidoCategoria() {
+        const contenido = contenidoCategoria[categoriaActiva];
 
-        frase.textContent = contenido.frase;
-        imagen.src = contenido.imagen;
-        descripcion.textContent = contenido.descripcion;
+        if (!contenido) return;
 
-        setTimeout(() => {
-            imagen.classList.add("visible");
-        }, 100);
+        if (imagen) {
+            imagen.classList.remove("visible");
+            imagen.src = contenido.imagen;
+
+            setTimeout(() => {
+                imagen.classList.add("visible");
+            }, 100);
+        }
+
+        if (frase) {
+            frase.textContent = contenido.frase;
+        }
+
+        if (descripcion) {
+            descripcion.textContent = contenido.descripcion;
+        }
     }
-}
 
     function aplicarFiltros() {
         cards.forEach(card => {
@@ -186,12 +196,18 @@ function actualizarContenidoCategoria() {
             const coincideTipo =
                 tipoActivo === "todos" || tipoCard === tipoActivo;
 
-            if (coincideCategoria && coincideTipo) {
-                card.style.display = "block";
-            } else {
-                card.style.display = "none";
-            }
+            card.style.display = coincideCategoria && coincideTipo ? "flex" : "none";
         });
+    }
+
+    function actualizarBotonesLimpiar() {
+        if (limpiarCategoria) {
+            limpiarCategoria.classList.toggle("oculto", categoriaActiva === "todos");
+        }
+
+        if (limpiarTipo) {
+            limpiarTipo.classList.toggle("oculto", tipoActivo === "todos");
+        }
     }
 
     filtrosCategoria.forEach(boton => {
@@ -199,9 +215,11 @@ function actualizarContenidoCategoria() {
             filtrosCategoria.forEach(b => b.classList.remove("active"));
             boton.classList.add("active");
 
-            categoriaActiva = boton.dataset.categoria;
+            categoriaActiva = boton.dataset.categoria || "todos";
+
             actualizarContenidoCategoria();
             aplicarFiltros();
+            actualizarBotonesLimpiar();
         });
     });
 
@@ -210,15 +228,40 @@ function actualizarContenidoCategoria() {
             filtrosTipo.forEach(b => b.classList.remove("active"));
             boton.classList.add("active");
 
-            tipoActivo = boton.dataset.tipo;
+            tipoActivo = boton.dataset.tipo || "todos";
+
             aplicarFiltros();
+            actualizarBotonesLimpiar();
         });
     });
 
+    if (limpiarCategoria) {
+        limpiarCategoria.addEventListener("click", () => {
+            categoriaActiva = "todos";
+
+            filtrosCategoria.forEach(b => b.classList.remove("active"));
+
+            actualizarContenidoCategoria();
+            aplicarFiltros();
+            actualizarBotonesLimpiar();
+        });
+    }
+
+    if (limpiarTipo) {
+        limpiarTipo.addEventListener("click", () => {
+            tipoActivo = "todos";
+
+            filtrosTipo.forEach(b => b.classList.remove("active"));
+
+            aplicarFiltros();
+            actualizarBotonesLimpiar();
+        });
+    }
+
     actualizarContenidoCategoria();
     aplicarFiltros();
+    actualizarBotonesLimpiar();
 });
-
 /* =========================
    MENU HAMBURGUESA
 ========================= */
