@@ -286,17 +286,18 @@ body {
 
 .inicio-texto a {
   display: inline-block;
-  padding: 14px 36px;
+  padding: 16px 42px;
   border: 1px solid #a67c2e;
   text-decoration: none;
   font-size: 16px;
+  font-weight: 600;
   letter-spacing: 1px;
   color: #a67c2e;
   background: transparent;
   transition: all 0.35s ease;
 }
 .inicio-texto a:hover {
-  background-color: #2b2b2b;
+  background:#ad8728;
   color: white;
 }
 
