@@ -264,8 +264,9 @@ body {
 
 .inicio-texto h1 {
   font-size: 30px;
+  max-width:500px;
   font-weight: 200;
-  line-height: 1.1;
+  line-height: 1.15;
   margin-bottom: 20px;
   letter-spacing: 1px;
   font-family: "Permanent Marker", cursive;
