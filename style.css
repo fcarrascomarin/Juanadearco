@@ -344,20 +344,24 @@ body {
 .productos-sidebar {
   grid-column: 1 !important;
   position: sticky;
-  top: 120px;
+  top: 90px;
   align-self: start;
-  width: 320px;
-  max-width: 320px;
+  width: 300px;
+  max-width: 300px;
   min-width: 0;
-  overflow: hidden;
+  overflow: visible;
+  max-height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .limpiar-filtros {
   align-self: center;
-  margin-top: 4px;
+  margin-top: 0px;
   background: transparent;
   border: none;
   color: #8e8a80;
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.5px;
   cursor: pointer;
   text-decoration: underline;
@@ -378,14 +382,15 @@ body {
 .productos-sidebar .categorias {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
    width: 100%;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .productos-sidebar .filtro {
   width: 100%;
-  height: 52px;
+  height: 46px;
+  padding: 8px 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -433,7 +438,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
+  gap: 10px;
   width: 100%;
   max-width: 100%;
   text-align: center;
@@ -448,8 +453,8 @@ body {
   margin: 0 auto;
   white-space: normal;
   overflow-wrap: break-word;
-  font-size: clamp(18px, 1.8vw, 26px);
-  line-height: 1.2;
+  font-size: clamp(18px, 1.6vw, 24px);
+  line-height: 1.05;
 }
 #fraseCategoria,
 .frase-categoria h2,
@@ -464,9 +469,10 @@ body {
 
 .imagen-categoria {
   width: 100%;
-  max-width: 260px;
+  max-width:210px;
+  max-height: 210px;
   border-radius: 12px;
-  object-fit: cover;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 0.4s ease;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
@@ -479,12 +485,12 @@ body {
 }
 
 .descripcion-categoria {
-  font-size: 14px;
-  line-height: 1.55;
+  font-size: 13px;
+  line-height: 1.35;
   color: #5f5a52;
   text-align: center;
   margin: 0;
-  max-width: 260px;
+  max-width: 240px;
 }
 
 .categorias,
