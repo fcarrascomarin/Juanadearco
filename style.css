@@ -308,16 +308,32 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 12px 18px;
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 .hero-valores span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 20px;
+  border: 1px solid rgba(173, 135, 40, 0.45);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.35);
+  color: #6b665d;
+  text-decoration: none;
   font-size: 12px;
+  font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #8e8a80;
+  transition: all 0.25s ease;
 }
 
+.hero-valores span:hover{
+  background: #ad8728;
+  color: white;
+  border-color: #ad8728;
+  transform: translateY(-2px);
+}
 /* EFECTO HOVER ELEGANTE */
 
 .inicio-texto a:hover {
@@ -351,14 +367,15 @@ body {
   width: 300px;
   max-width: 300px;
   min-width: 0;
-  overflow: visible;
+  overflow: hidden auto;
   max-height: calc(100vh - 110px);
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 .limpiar-filtros {
-  align-self: center;
+  align-self: flex-start;
+  padding-left: 4px;
   margin-top: 0px;
   background: transparent;
   border: none;
@@ -386,12 +403,12 @@ body {
   flex-direction: column;
   gap: 8px;
    width: 100%;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .productos-sidebar .filtro {
   width: 100%;
-  height: 46px;
+  height: 44px;
   padding: 8px 14px;
   display: flex;
   justify-content: center;
@@ -458,21 +475,12 @@ body {
   font-size: clamp(18px, 1.6vw, 24px);
   line-height: 1.05;
 }
-#fraseCategoria,
-.frase-categoria h2,
-.frase-categoria h3 {
-  max-width: 100%;
-  white-space: normal;
-  overflow-wrap: break-word;
-  word-break: normal;
-  font-size: clamp(20px, 2vw, 28px);
-  line-height: 1.15;
-}
+
 
 .imagen-categoria {
   width: 100%;
-  max-width:210px;
-  max-height: 210px;
+  max-width: 190px;
+  max-height: 190px;
   border-radius: 12px;
   object-fit: contain;
   opacity: 0;
@@ -487,8 +495,8 @@ body {
 }
 
 .descripcion-categoria {
-  font-size: 13px;
-  line-height: 1.35;
+  font-size: 12.5px;
+  line-height: 1.3;
   color: #5f5a52;
   text-align: center;
   margin: 0;
@@ -548,6 +556,9 @@ body {
   border-color: #ad8728;
   font-weight: 700;
 }
+
+
+
 
 
 .card {
