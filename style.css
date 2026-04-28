@@ -247,6 +247,7 @@ body {
 .inicio-texto {
   max-width: 500px;
   color: #a67c2e;
+  align-items: center;
 }
 
 /* FRASE SUPERIOR */
@@ -257,6 +258,7 @@ body {
   text-transform: uppercase;
   color: #8e8a80;
   margin-bottom: 18px;
+
 }
 
 
