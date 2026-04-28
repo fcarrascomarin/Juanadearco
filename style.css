@@ -796,7 +796,7 @@ body {
   min-width: 118px;
   border: 1px solid #ad8728;
   background: #ad8728;
-  color: #1f1f1f;
+  color: #fff;
   border-radius: 999px;
   cursor: pointer;
   font-size: 15px;
@@ -804,7 +804,8 @@ body {
 }
 
 .dias button:hover {
-  background:#f7f1e8;
+  background:#ad8728;
+ color: #fff;
 }
 
 .redes-perforaciones {
