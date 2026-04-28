@@ -299,7 +299,10 @@ body {
   background: transparent;
   transition: all 0.35s ease;
 }
-
+.inicio-texto a:hover {
+  background:#ad8728;
+  color: white;
+}
 
 /* VALORES */
 
@@ -334,7 +337,7 @@ body {
 /* EFECTO HOVER ELEGANTE */
 
 .inicio-texto a:hover {
-  background-color:#a67c2e;
+  background-color:#f7f1e8;
   color: white;
   border-color: #a67c2e;
 }
