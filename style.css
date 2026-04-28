@@ -299,10 +299,7 @@ body {
   background: transparent;
   transition: all 0.35s ease;
 }
-.inicio-texto a:hover {
-  background:#ad8728;
-  color: white;
-}
+
 
 /* VALORES */
 
