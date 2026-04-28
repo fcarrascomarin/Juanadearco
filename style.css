@@ -823,13 +823,13 @@ body {
   align-items: center;
   gap: 7px;
   text-decoration: none;
-  color: #ad8728;
+  color:#000;
   font-weight: 700;
   font-size: 14px;
   cursor: pointer;
 }
 .redes-perforaciones a:hover {
-  color: #000;
+  color:#ad8728;
 }
 /* =========================
    CARRITO
