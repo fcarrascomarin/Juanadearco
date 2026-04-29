@@ -303,7 +303,7 @@ body {
 
 /* VALORES */
 
-.redes span {
+.redes a {
   display: flex;
   flex-wrap: wrap;
   gap: 12px 18px;
