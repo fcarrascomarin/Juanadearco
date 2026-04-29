@@ -542,7 +542,7 @@ body {
   margin: 0 auto;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.card:hover {
+.card button:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 25px #ad8728;
 }
