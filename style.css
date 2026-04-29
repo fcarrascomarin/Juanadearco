@@ -249,7 +249,7 @@ body {
 
 /* FRASE SUPERIOR */
 
-.hero-eyebrow {
+.hero-eyebrow, .hero-eyebrow i {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
