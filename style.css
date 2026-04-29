@@ -301,30 +301,7 @@ body {
   color: #fff;
 }
 
-/* VALORES */
 
-.redes a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 10px;
-  border-radius: 500px;
-  color: #6b665d;
-  text-decoration: none;
-  font-size: 10px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: all 0.25s ease;
-}
-
-
-.redes a:hover{
-  background: #ad8728;
-  color: white;
-  border-color: #ad8728;
-  transform: translateY(-2px);
-}
 /* EFECTO HOVER ELEGANTE */
 
 .inicio-texto a:hover {
