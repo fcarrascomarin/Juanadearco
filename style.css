@@ -340,10 +340,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  border-color: #a67c2e;
-  opacity: 0.6;
-  transform: scale(0.95);
-  
+   
 }
 .limpiar-filtros {
   align-self: flex-start;
