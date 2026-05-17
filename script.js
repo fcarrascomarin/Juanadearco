@@ -335,7 +335,7 @@ document
   mensaje += `%0A💫 Total: $${total}`;
 
   window.open(
-    `https://wa.me/569TU_NUMERO?text=${mensaje}`,
+    `https://wa.me/56923770543?text=${mensaje}`,
     "_blank"
   );
 });
