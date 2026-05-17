@@ -321,6 +321,25 @@ document
 .getElementById("cartOverlay")
 .addEventListener("click", cerrarCarrito);
 
+document
+.getElementById("btnWhatsapp")
+.addEventListener("click", () => {
+
+  let mensaje =
+    "Hola ✨ Me gustaría comprar las siguientes joyas:%0A%0A";
+
+  carrito.forEach(item => {
+    mensaje += `• ${item.nombre} - $${item.precio}%0A`;
+  });
+
+  mensaje += `%0A💫 Total: $${total}`;
+
+  window.open(
+    `https://wa.me/569TU_NUMERO?text=${mensaje}`,
+    "_blank"
+  );
+});
+
 
 /* =========================
    MENU HAMBURGUESA
