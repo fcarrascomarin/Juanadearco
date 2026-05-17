@@ -6,19 +6,11 @@ let carrito = [];
 let total = 0;
 
 function agregarAlCarrito(nombre, precio) {
-    carrito.push({ nombre, precio });
-    total += precio;
+  carrito.push({ nombre, precio });
+  total += precio;
 
-    actualizarCarrito();
-    abrirCarrito();
-
-    // abrir carrito automáticamente
-    const cartDropdown = document.getElementById("cartDropdown");
-    if (cartDropdown) {
-        cartDropdown.classList.add("open");
-    }
-
-    mostrarMensajeCarrito(`${nombre} agregado al carrito ✨`);
+  actualizarCarrito();
+  abrirCarrito();
 }
 function mostrarMensajeCarrito(texto) {
     let toast = document.getElementById("toastCarrito");
@@ -39,36 +31,39 @@ function mostrarMensajeCarrito(texto) {
     }, 2500);
 }
 
-
-
 function actualizarCarrito() {
-    const lista = document.getElementById("lista-carrito");
-    const totalElemento = document.getElementById("total");
-    const cartCount = document.getElementById("cartCount");
+  const lista = document.getElementById("cartItems");
+  const totalElemento = document.getElementById("cartTotal");
+  const cartCount = document.getElementById("cartCount");
 
-    if (!lista || !totalElemento) return;
+  if (!lista || !totalElemento) return;
 
-    lista.innerHTML = "";
+  lista.innerHTML = "";
 
+  if (carrito.length === 0) {
+    lista.innerHTML = `<li><span>Tu carrito está vacío.</span></li>`;
+  } else {
     carrito.forEach((producto, index) => {
-        const li = document.createElement("li");
-        li.innerHTML = `
-            <span>${producto.nombre} - $${producto.precio}</span>
-            <button onclick="eliminarProducto(${index})">X</button>
-        `;
-        lista.appendChild(li);
+      const li = document.createElement("li");
+
+      li.innerHTML = `
+        <span>${producto.nombre} - $${producto.precio.toLocaleString("es-CL")}</span>
+        <button type="button" onclick="eliminarProducto(${index})">×</button>
+      `;
+
+      lista.appendChild(li);
     });
+  }
 
-    if (carrito.length === 0) {
-        lista.innerHTML = `<li><span>Tu carrito está vacío.</span></li>`;
-    }
+  totalElemento.textContent = `$${total.toLocaleString("es-CL")}`;
 
-    totalElemento.textContent = total;
-
-    if (cartCount) {
-        cartCount.textContent = carrito.length;
-    }
+  if (cartCount) {
+    cartCount.textContent = carrito.length;
+  }
 }
+
+
+
 function seguirComprando() {
     const cartDropdown = document.getElementById("cartDropdown");
     if (cartDropdown) {
@@ -289,100 +284,42 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function abrirCarrito() {
-  document
-    .getElementById("cartDropdown")
-    .classList.add("open");
+  const cartDropdown = document.getElementById("cartDropdown");
+  const cartOverlay = document.getElementById("cartOverlay");
 
-  document
-    .getElementById("cartOverlay")
-    .classList.add("open");
+  if (cartDropdown) cartDropdown.classList.add("open");
+  if (cartOverlay) cartOverlay.classList.add("open");
 }
 
 function cerrarCarrito() {
-  document
-    .getElementById("cartDropdown")
-    .classList.remove("open");
+  const cartDropdown = document.getElementById("cartDropdown");
+  const cartOverlay = document.getElementById("cartOverlay");
 
-  document
-    .getElementById("cartOverlay")
-    .classList.remove("open");
+  if (cartDropdown) cartDropdown.classList.remove("open");
+  if (cartOverlay) cartOverlay.classList.remove("open");
 }
 
-/* cerrar */
-document
-.getElementById("cerrarCarrito")
-.addEventListener("click", cerrarCarrito);
+document.addEventListener("DOMContentLoaded", () => {
+  const cartToggle = document.getElementById("cartToggle");
+  const cerrarBtn = document.getElementById("cerrarCarrito");
+  const seguirBtn = document.getElementById("seguirComprando");
+  const overlay = document.getElementById("cartOverlay");
+  const btnWhatsapp = document.getElementById("btnWhatsapp");
 
-document
-.getElementById("seguirComprando")
-.addEventListener("click", cerrarCarrito);
-
-document
-.getElementById("cartOverlay")
-.addEventListener("click", cerrarCarrito);
-
-document
-.getElementById("btnWhatsapp")
-.addEventListener("click", () => {
-
-  let mensaje =
-    "Hola ✨ Me gustaría comprar las siguientes joyas:%0A%0A";
-
-  carrito.forEach(item => {
-    mensaje += `• ${item.nombre} - $${item.precio}%0A`;
-  });
-
-  mensaje += `%0A💫 Total: $${total}`;
-
-  window.open(
-    `https://wa.me/56923770543?text=${mensaje}`,
-    "_blank"
-  );
-});
-
-
-/* =========================
-   MENU HAMBURGUESA
-========================= */
-
-document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById("menuToggle");
-    const nav = document.getElementById("navMenu");
-
-    if (toggle && nav) {
-        toggle.addEventListener("click", () => {
-            nav.classList.toggle("active");
-        });
-    }
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const cartToggle = document.getElementById("cartToggle");
-    const cartDropdown = document.getElementById("cartDropdown");
-    const cartClose = document.getElementById("cartClose");
-
-    if (cartToggle && cartDropdown) {
-        cartToggle.addEventListener("click", function (e) {
-            e.stopPropagation();
-            cartDropdown.classList.toggle("open");
-        });
-    }
-
-    if (cartClose && cartDropdown) {
-        cartClose.addEventListener("click", function () {
-            cartDropdown.classList.remove("open");
-        });
-    }
-
-    document.addEventListener("click", function (e) {
-        if (
-            cartDropdown &&
-            cartToggle &&
-            !cartDropdown.contains(e.target) &&
-            !cartToggle.contains(e.target)
-        ) {
-            cartDropdown.classList.remove("open");
-        }
+  if (cartToggle) {
+    cartToggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      abrirCarrito();
     });
+  }
 
-    actualizarCarrito();
+  if (cerrarBtn) cerrarBtn.addEventListener("click", cerrarCarrito);
+  if (seguirBtn) seguirBtn.addEventListener("click", cerrarCarrito);
+  if (overlay) overlay.addEventListener("click", cerrarCarrito);
+
+  if (btnWhatsapp) {
+    btnWhatsapp.addEventListener("click", enviarWhatsApp);
+  }
+
+  actualizarCarrito();
 });
