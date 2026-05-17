@@ -730,6 +730,100 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+/* =========================
+   ENCARGO PERSONAL
+========================= */
+
+.encargo-personal {
+  padding: 90px 5%;
+  background: #f4efe7;
+}
+
+.encargo-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.encargo-imagen img {
+  width: 100%;
+  border-radius: 26px;
+  display: block;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+.encargo-texto {
+  max-width: 540px;
+}
+
+.encargo-eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8e8a80;
+  margin-bottom: 16px;
+}
+
+.encargo-texto h2 {
+  font-size: 42px;
+  line-height: 1.1;
+  margin-bottom: 22px;
+  color: #ad8728;
+  font-family: "Permanent Marker", cursive;
+}
+
+.encargo-descripcion {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #5f5a52;
+  margin-bottom: 18px;
+}
+
+.encargo-texto .btn-principal {
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .encargo-personal {
+    padding: 70px 5%;
+  }
+
+  .encargo-container {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    text-align: center;
+  }
+
+  .encargo-texto {
+    max-width: 100%;
+  }
+
+  .encargo-texto h2 {
+    font-size: 34px;
+  }
+
+  .encargo-descripcion {
+    font-size: 16px;
+  }
+
+  .encargo-texto .btn-principal {
+    width: 100%;
+    max-width: 280px;
+    margin: 22px auto 0;
+  }
+}
 /* =========================
    PERFORACIONES
 ========================= */
