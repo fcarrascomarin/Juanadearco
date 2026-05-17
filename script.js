@@ -10,6 +10,7 @@ function agregarAlCarrito(nombre, precio) {
     total += precio;
 
     actualizarCarrito();
+    abrirCarrito();
 
     // abrir carrito automáticamente
     const cartDropdown = document.getElementById("cartDropdown");
@@ -286,6 +287,41 @@ document.addEventListener("DOMContentLoaded", function () {
     aplicarFiltros();
     actualizarBotonesLimpiar();
 });
+
+function abrirCarrito() {
+  document
+    .getElementById("cartDropdown")
+    .classList.add("open");
+
+  document
+    .getElementById("cartOverlay")
+    .classList.add("open");
+}
+
+function cerrarCarrito() {
+  document
+    .getElementById("cartDropdown")
+    .classList.remove("open");
+
+  document
+    .getElementById("cartOverlay")
+    .classList.remove("open");
+}
+
+/* cerrar */
+document
+.getElementById("cerrarCarrito")
+.addEventListener("click", cerrarCarrito);
+
+document
+.getElementById("seguirComprando")
+.addEventListener("click", cerrarCarrito);
+
+document
+.getElementById("cartOverlay")
+.addEventListener("click", cerrarCarrito);
+
+
 /* =========================
    MENU HAMBURGUESA
 ========================= */

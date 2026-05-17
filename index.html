@@ -95,29 +95,33 @@
       <span class="cart-count" id="cartCount">0</span>
     </button>
 
-    <div class="cart-dropdown" id="cartDropdown">
-      <div class="cart-dropdown-header">
-        <h3>Tu carrito</h3>
-        <button class="cart-close" id="cartClose" aria-label="Cerrar carrito">×</button>
-      </div>
+<!-- Overlay -->
+<div id="cartOverlay" class="cart-overlay"></div>
 
-      <ul id="lista-carrito" class="cart-items"></ul>
+<!-- Carrito -->
+<div class="cart-dropdown" id="cartDropdown">
 
-      <p class="total">
-        Total: $<span id="total">0</span>
-      </p>
+  <div class="cart-header">
+    <h3>Tu selección ✨</h3>
+    <button id="cerrarCarrito">×</button>
+  </div>
 
-      <div class="carrito-botones">
-        <button class="btn-secundario" onclick="seguirComprando()">
-          Seguir comprando
-        </button>
+  <div id="cartItems" class="cart-items"></div>
 
-        <button class="btn-principal" onclick="enviarWhatsApp()">
-          Finalizar por WhatsApp
-        </button>
-      </div>
+  <div class="cart-footer">
+    <p>Total: <strong id="cartTotal">$0</strong></p>
+
+    <div class="cart-actions">
+      <button id="seguirComprando" class="btn-secundario">
+        Seguir comprando
+      </button>
+
+      <button id="btnWhatsapp" class="btn-principal">
+        Continuar por WhatsApp
+      </button>
     </div>
   </div>
+
 </div>
 
     </div>
