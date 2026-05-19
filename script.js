@@ -1,6 +1,11 @@
 /* =========================
    CARRITO JOYAS
 ========================= */
+
+let carrito = [];
+let total = 0;
+
+
 function guardarCarrito() {
   localStorage.setItem("carrito", JSON.stringify(carrito));
   localStorage.setItem("total", total);
@@ -14,8 +19,7 @@ function cargarCarrito() {
   if (totalGuardado) total = parseInt(totalGuardado);
 }
 
-let carrito = [];
-let total = 0;
+
 
 function agregarAlCarrito(nombre, precio, imagen = "") {
 
