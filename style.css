@@ -1247,7 +1247,28 @@ footer {
   width: 16px;
   height: 16px;
 }
+.item-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
+.item-cantidad {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.item-cantidad button {
+  border: none;
+  background: #eee;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
     /* ================= PERFORACIONES ================= */
 .perforaciones {
