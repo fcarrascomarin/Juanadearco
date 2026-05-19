@@ -101,7 +101,7 @@ function actualizarCarrito() {
     cartCount.textContent = carrito.reduce((acc, p) => acc + p.cantidad, 0);
   }
 
-  guardarCarrito();
+  
 }
 
 function cambiarCantidad(index, cambio) {
