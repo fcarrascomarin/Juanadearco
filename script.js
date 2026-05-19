@@ -138,13 +138,6 @@ function seguirComprando() {
     }
 }
 
-function eliminarProducto(index) {
-    if (!carrito[index]) return;
-
-    total -= carrito[index].precio;
-    carrito.splice(index, 1);
-    actualizarCarrito();
-}
 
 function enviarWhatsApp() {
     if (carrito.length === 0) {
@@ -210,6 +203,24 @@ function cambiarImagen(boton, direccion) {
    FILTROS + FRASE + IMAGEN + TIPO
 ========================= */
 
+
+function abrirCarrito() {
+  const cartDropdown = document.getElementById("cartDropdown");
+  const cartOverlay = document.getElementById("cartOverlay");
+
+  if (cartDropdown) cartDropdown.classList.add("open");
+  if (cartOverlay) cartOverlay.classList.add("open");
+}
+
+function cerrarCarrito() {
+  const cartDropdown = document.getElementById("cartDropdown");
+  const cartOverlay = document.getElementById("cartOverlay");
+
+  if (cartDropdown) cartDropdown.classList.remove("open");
+  if (cartOverlay) cartOverlay.classList.remove("open");
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const filtrosCategoria = document.querySelectorAll(".filtro");
     const filtrosTipo = document.querySelectorAll(".filtro-tipo");
@@ -220,6 +231,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const frase = document.getElementById("fraseCategoria");
     const imagen = document.getElementById("imagenCategoria");
     const descripcion = document.getElementById("descripcionCategoria");
+
+    const cartToggle = document.getElementById("cartToggle");
+    const cerrarBtn = document.getElementById("cerrarCarrito");
+    const seguirBtn = document.getElementById("seguirComprando");
+    const overlay = document.getElementById("cartOverlay");
+    const btnWhatsapp = document.getElementById("btnWhatsapp");
 
     let categoriaActiva = "todos";
     let tipoActivo = "todos";
@@ -343,35 +360,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    actualizarContenidoCategoria();
-    aplicarFiltros();
-    actualizarBotonesLimpiar();
-    cargarCarrito();
-    actualizarCarrito();
-});
-
-function abrirCarrito() {
-  const cartDropdown = document.getElementById("cartDropdown");
-  const cartOverlay = document.getElementById("cartOverlay");
-
-  if (cartDropdown) cartDropdown.classList.add("open");
-  if (cartOverlay) cartOverlay.classList.add("open");
-}
-
-function cerrarCarrito() {
-  const cartDropdown = document.getElementById("cartDropdown");
-  const cartOverlay = document.getElementById("cartOverlay");
-
-  if (cartDropdown) cartDropdown.classList.remove("open");
-  if (cartOverlay) cartOverlay.classList.remove("open");
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const cartToggle = document.getElementById("cartToggle");
-  const cerrarBtn = document.getElementById("cerrarCarrito");
-  const seguirBtn = document.getElementById("seguirComprando");
-  const overlay = document.getElementById("cartOverlay");
-  const btnWhatsapp = document.getElementById("btnWhatsapp");
+    
 
   if (cartToggle) {
     cartToggle.addEventListener("click", (e) => {
@@ -388,5 +377,9 @@ document.addEventListener("DOMContentLoaded", () => {
     btnWhatsapp.addEventListener("click", enviarWhatsApp);
   }
 
-  actualizarCarrito();
+    actualizarContenidoCategoria();
+    aplicarFiltros();
+    actualizarBotonesLimpiar();
+    cargarCarrito();
+    actualizarCarrito();
 });
