@@ -99,32 +99,38 @@
         <div id="cartOverlay" class="cart-overlay"></div>
 
         <!-- Carrito -->
-        <div class="cart-dropdown" id="cartDropdown">
+       <div id="cartOverlay" class="cart-overlay"></div>
 
-          <div class="cart-header">
-            <h3>Tu selección ✨</h3>
-            <button id="cerrarCarrito">×</button>
-          </div>
+<div id="cartDropdown" class="cart-modal">
+  <div class="modal-content">
 
-          <div id="cartItems" class="cart-items"></div>
+    <div class="modal-header">
+      <h3>Tu selección ✨</h3>
+      <button id="cerrarCarrito" class="close-btn">×</button>
+    </div>
 
-          <div class="cart-footer">
-            <p>Total: <strong id="cartTotal">$0</strong></p>
+    <p class="modal-subtitle">Estás a un paso de tu joya 💫</p>
 
-            <div class="cart-actions">
-              <button id="seguirComprando" class="btn-secundario">
-                Seguir comprando
-              </button>
+    <div id="cartItems" class="modal-items"></div>
 
-              <button id="btnWhatsapp" class="btn-principal">
-                Continuar por WhatsApp
-              </button>
-            </div>
-          </div>
+    <div class="modal-total">
+      Total: <span id="cartTotal">$0</span>
+    </div>
 
-        </div>
+    <div class="modal-benefits">
+      ✔ Hecho a mano <br>
+      ✔ Coordinación directa por WhatsApp
+    </div>
 
+    <div class="modal-actions">
+      <button id="seguirComprando" class="btn-secondary">Seguir viendo</button>
+      <button id="btnWhatsapp" class="btn-primary">Comprar ahora</button>
+    </div>
+
+  </div>
 </div>
+
+
 </header>
  
 <section class="inicio" id="inicio">
